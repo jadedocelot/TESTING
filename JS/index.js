@@ -202,7 +202,7 @@ myPush.push(4); /// myPush = [1,2,3,4];
 
 /*manipulating arrays with pop(). This will remove the last number of an array which can then be assigned to a VAR*/
 
-var threeArr = [1,2,3];
+var threeArr = [1,2,3]; 
 
 var popOff = threeArr.pop(); ///The last number of threeArr as now been assigned to popOff
 
@@ -232,4 +232,4 @@ console.log(myArray);
 
 var myList = [["Edgarlll", 29], ["Allison", 35], ["Meg", 25], ["Danica", 27], ["Kevin", 27]];
 
-/*end*/
+/*end*/ TODO
