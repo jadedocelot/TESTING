@@ -210,3 +210,9 @@ console.log(threeArr); /// Returns 1,2
 console.log(popOff); ///// Returns 3
 
 /* manipulating arrays with .shift() - The first number of array will be romoved and assigned to new VAR */
+
+var myArray = [["John", 24], ["Edgar", 29]];
+
+var removehisArray = myArray.shift();///This will remove the first array of myArray
+
+//myArray = ["Egdar", 29];
