@@ -216,3 +216,19 @@ var myArray = [["John", 24], ["Edgar", 29]];
 var removehisArray = myArray.shift();///This will remove the first array of myArray
 
 //myArray = ["Egdar", 29];
+
+
+/* Now this one was a fucking bitch but here it is.*/
+/* This is  is continuing in multiplying arrays, the following syntax is to replace the first array of a multi dimensional array*/
+
+var myArray = [[Edgar, 29], [Allison, 35]]; ///// OG Array 
+
+myArray.shift();//Bumps the first element off of the array  
+var hahaHa = myArray.unshift(["Danica", 27]);///This has now taken filled the first empty slot of the array
+///myArray = [["Danica, 27"], ["Allison", 35]];
+console.log(myArray);
+
+/* The bottom syntex which is a VAR consists of a MULTI DIM array containing several sub arrays*/
+
+var myList = [["Edgarlll", 29], ["Allison", 35], ["Meg", 25], ["Danica", 27], ["Kevin", 27]];
+
