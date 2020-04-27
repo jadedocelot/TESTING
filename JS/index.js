@@ -232,4 +232,49 @@ console.log(myArray);
 
 var myList = [["Edgarlll", 29], ["Allison", 35], ["Meg", 25], ["Danica", 27], ["Kevin", 27]];
 
-/*end*/ TODO
+/*end*/ TODO 
+
+/* calling or to invoke a function to be shown in console*/
+
+function consoleFunction() {   ////Declaring the function
+    console.log("Ya Stink!");   ////Mesage to be presented in dev console when called apon 
+}
+
+consoleFunction(); ///Function being called 
+
+/*end*/
+
+/*setting up parameters (VAR) as placholders*/
+
+function FuntionPassArg(Number1, Number2){  ///Assigning parameters to functionPassArg, which again act as placeholders for the values to be called
+    console.log(Number1 + Number2); // syntax how how to use parameters
+
+}
+
+FuntionPassArg(5, 5); /// passing values over to parameters Number1 and Number2 /// OUTPUT 10
+FuntionPassArg(8, 8);//// Output 16
+
+/*end*/
+
+/* SCOPES and GLOBAL SCOPES*/
+
+var myGlobal = 10; ///var defined outside of a function block makes this a global scope, which allows it to be seen seen throughout the whole code
+
+function Fun1() {
+
+ oopsGlobal = 5; ///a variable without a VAR is automat a global scope as long as it's within a function statement, though if VAR were included it would no longer be global and would only be aplied to Fun1 and not would be condisdered undefined within Fun2
+    
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {  ////since VAR myGloable was defined outside of a function it can be picked up and will not be UNDEFINED
+   /*NO VAR*/ output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") { ///if VAR was included oopsGlobal it would would directly be assigned to Fun1 but sice VAR was not inluded it would automatic become GLOBALS, even if placed within another function 
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+fun1();
+fun2();
