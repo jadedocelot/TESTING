@@ -16,3 +16,4 @@ REVIEW #umbers are mainly two types, integers (integer is a whole number that is
 * https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/a/negative-exponents-review
 
 #NOTES END
+

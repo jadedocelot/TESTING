@@ -1,8 +1,7 @@
-function functionPassArg(Number1, Number2) {
-    console.log(Number1 + Number2);
-
-
+function localScopeTest() {
+    myVar = "Hello Cunt!";
+    console.log(myVar);
 }
 
-functionPassArg(8, 8);
-functionPassArg(15, 58);
+localScopeTest();
+console.log(myVar);

@@ -271,10 +271,25 @@ function fun2() {
   if (typeof myGlobal != "undefined") {  ////since VAR myGloable was defined outside of a function it can be picked up and will not be UNDEFINED
    /*NO VAR*/ output += "myGlobal: " + myGlobal;
   }
-  if (typeof oopsGlobal != "undefined") { ///if VAR was included oopsGlobal it would would directly be assigned to Fun1 but sice VAR was not inluded it would automatic become GLOBALS, even if placed within another function 
+  if (typeof oopsGlobal != "undefined") { ///if VAR was included oopsGlobal it would would directly be assigned to Fun1 but sice VAR was not inluded it would automatic become GLOBALS, even if placed within another function  
     output += " oopsGlobal: " + oopsGlobal;
   }
   console.log(output);
 }
 fun1();
 fun2();
+
+
+/*Local Scopes*/
+
+function myLocalScope() {
+    var myVar = 'loco'; ////VAR declared within a function are considered a LOCAL SCOPE which means they are only visible within that function. Removing the VAR would then make it GLOBAL and accessible from anywhare within the code
+    console.log(myVar); /// will print out VAR in dev console since variable was declared within the function
+                    
+ }
+
+ myTest();
+ console.log(myVar);////myVar is undefined since variable was declared with a VAR within myLocalScope function
+
+/* END */
+
