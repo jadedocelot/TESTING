@@ -1,11 +1,6 @@
-function Queues(arr, items) {
-	arr.push(items);
-	return arr.shift();
 
- }
+function booLean() {
 
- var dataStructure = [3,6,9,12,15];
+    return true;
 
-console.log("Before:" + JSON.stringify(dataStructure));
-console.log(Queues(dataStructure, 18));
-console.log("After" + JSON.stringify(dataStructure));
+}console.log(booLean);

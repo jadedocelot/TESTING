@@ -380,3 +380,11 @@ console.log(nextInLine (testerArr, 6));
 console.log("After:" + JSON.stringify(testerArr)); 
 /// will present var testerArr POST manmipulation  ---> [2,3,4,5,6] printed in DEV CONSOLE
 
+/*Working on BOOLEANS*/
+//which may only have two functions TRUE or FALSE (on or off). BOOLEANS are never written in quotes
+
+function booLean() { 
+
+    return true; // booLean will return true value
+
+}
