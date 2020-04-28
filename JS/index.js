@@ -293,3 +293,81 @@ function myLocalScope() {
 
 /* END */
 
+/*  REVIEW GLOBAL vs LOCAL scope functions */
+
+var outerWear = "Shirt"; //Global Variable
+
+function todaysOutfit(){
+    var outerWear = "Sweater"; /// This VAR will take precedence over the GLOBAL VAR 
+        return outerWear;
+
+}
+
+todaysOutfit();
+
+/*understanding the RETURN function */
+
+function timesFive(Number) {  //Number acts a a placeholder for a value to be placed into it
+	return Number * 5;   /// * 5 will be returned and applied to whatevert value is assigned to the Number keyword
+
+}
+
+var AnswerOne = timesFive(5);   // 5 * 5 
+var AnwswerTwo = timesFive(0); // 0 * 5 
+var AnswerThree = timesFive(2); // 2 * 5 
+
+console.log(AnswerOne);  // 25 in DEV CON LOG
+console.log(AnwswerTwo); // 0 in DEV CON LOG
+console.log(AnswerThree); // 10 in DEV CON LOG
+
+console.log(AnswerOne);
+
+
+/*END RETURN*/
+
+/*undertanding undefined values returned by a function*/
+
+var sum = 0;
+
+function addThree(); {  /// The value here is undefined since there is no return 
+    sum = sum + 3; 
+    /* return Number * 5; <-- missing this functuion will declare this undefined*/
+
+
+    }
+
+function addFive() {
+    sum = sum + 5; 
+
+}
+// NOTE GETTING HARDER
+/* Assignments with a return value*/
+
+var processed = 0; //old value
+
+function functionArg(num) {
+    return (num + 5) / 5; // RETURN value will be assigned top 
+}
+
+processed = functionArg(5); /// functionArg mathmatical expression has now been assigned to Var processed
+// var processed  = 5 + 5 / 7;
+
+console.log(processed); /// prints NEW VALUE; var processed = 2  in DEV CONSOLE
+
+/*Understanding QUEUES*/
+//in compueter science QUEUES are abstract data structures
+
+function nextInLine(arr, item) {
+	arr.push(item);
+	return arr.shift();  //NOTE Note: The return value of the shift method is the removed item.
+
+}
+
+var testerArr = [1,2,3,4,5];
+
+console.log("Before:" + JSON.stringify(testerArr)); //present VAR = testerArr before being manipulated
+console.log(nextInLine (testerArr, 6)); ///
+//NOTE Note: The return value of the shift method is the removed item.
+// JSON.STRINGIFY converts JS value into a string
+console.log("After:" + JSON.stringify(testerArr));
+
