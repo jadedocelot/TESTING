@@ -1,13 +1,12 @@
-//NOTE see index.js for notes on each syntax 
+function canyouGivemeSomeAdvice (whatShouldBeDone){
+    if (whatShouldBeDone) {
+        return "Code and never work another day in your life!";
+    }
+    
+        return "Regardless, no turning back now";
 
-function Queues(arr, items) {
-	arr.push(items);
-	return arr.shift();
+}
 
- }
+canyouGivemeSomeAdvice(true);
+canyouGivemeSomeAdvice(false);
 
- var dataStructure = [3,6,9,12,15];
-
-console.log("Before:" + JSON.stringify(dataStructure));
-console.log(Queues(dataStructure, 18));
-console.log("After:" + dataStructure);

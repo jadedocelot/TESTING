@@ -376,7 +376,7 @@ console.log(nextInLine (testerArr, 6));
 //1. arr.push() will add 6 to the back of the array
 //2. return arr.shift() remove the 1 from testerArra and print removed number in DEV CONSOLE
 //NOTE Note: The return value of the shift method is the removed item.
-// JSON.STRINGIFY converts JS value into a string --- Alligning them in brackets
+// JSON.STRINGIFY converts JS value into a string --- Alligning them in brackets    
 console.log("After:" + JSON.stringify(testerArr)); 
 /// will present var testerArr POST manmipulation  ---> [2,3,4,5,6] printed in DEV CONSOLE
 
@@ -388,3 +388,19 @@ function booLean() {
     return true; // booLean will return true value
 
 }
+
+/* Using conditiontion logic with IF statements*/
+
+function canyouGivemeSomeAdvice (whatShouldBeDone){  
+    if (whatShouldBeDone) { //if whatShouldBeDone is TRUE
+        return "Code and never work another day in your life!";  // RETURN "Code and never work another day in your life"
+            // If function above is TRUE
+    }
+    
+        return "Regardless, no turning back now"; //if FALSE, statement above is not executed and this message is retured
+            // If function above is FALSE 
+}
+
+canyouGivemeSomeAdvice(true); /// "code and never work another day in your life" is returned -- since function is TRUE
+canyouGivemeSomeAdvice(false); // Ragardless, no turning back now" is returned  --- Since function is FALSE 
+
