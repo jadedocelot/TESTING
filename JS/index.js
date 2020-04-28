@@ -390,9 +390,9 @@ function booLean() {
 }
 
 /* Using conditiontion logic with IF statements*/
-
-function canyouGivemeSomeAdvice (whatShouldBeDone){  
-    if (whatShouldBeDone) { //if whatShouldBeDone is TRUE
+    // If statememt is used to make decisions in code 
+function canyouGivemeSomeAdvice (isTrue){  
+    if (isTrue)/*condition*/ { //if whatShouldBeDone is TRUE
         return "Code and never work another day in your life!";  // RETURN "Code and never work another day in your life"
             // If function above is TRUE
     }
@@ -401,6 +401,26 @@ function canyouGivemeSomeAdvice (whatShouldBeDone){
             // If function above is FALSE 
 }
 
-canyouGivemeSomeAdvice(true); /// "code and never work another day in your life" is returned -- since function is TRUE
-canyouGivemeSomeAdvice(false); // Ragardless, no turning back now" is returned  --- Since function is FALSE 
+console.log(canyouGivemeSomeAdvice(true)); /// "code and never work another day in your life" is returned -- since function is TRUE
+console.log(canyouGivemeSomeAdvice(false)); // Ragardless, no turning back now" is returned  --- Since function is FALSE 
 
+
+/* comparrison with the EQUALITY operator */
+// Equality operator ==
+///NOTE that = is an asign operator
+
+function guessmyAge(myVal) {
+    if (myVal == 28) // if myVal is 28 then == will retrieve TRUE  
+    // Eaqualiy Op (==) compares two values and returns TRUE if equivilant or FALSE if not
+        return "This is my correct age!"; // TRUE 
+{
+
+        return "This is not my correct age"; //FALSE
+}
+
+}
+
+console.log(guessmyAge(28));  ///consider this a TEST INPUT for now ANCHOR 
+//"This is my correct age!" will print out in DEV CON since 28 is TRUE
+console.log(guessmyAge(67));
+//"This is not my correct age" will print out in DEV CON since 67 is FALSE

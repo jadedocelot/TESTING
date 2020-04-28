@@ -1,12 +1,15 @@
-function canyouGivemeSomeAdvice (whatShouldBeDone){
-    if (whatShouldBeDone) {
-        return "Code and never work another day in your life!";
-    }
-    
-        return "Regardless, no turning back now";
+function guessmyAge(myVal) {
+    if (myVal == 28) // if myVal is 28 this it is TRUE 
+    // Eaqualiy Op (==) compares two values and returns TRUE if equivilant or FALSE if not
+        return "This is my correct age!"; // TRUE 
+{
+
+        return "This is not my correct age"; //FALSE
+}
 
 }
 
-canyouGivemeSomeAdvice(true);
-canyouGivemeSomeAdvice(false);
-
+console.log(guessmyAge(28)); 
+//"This is my correct age!" will print out in DEV CON since 28 is TRUE
+console.log(guessmyAge(67));
+//"This is not my correct age" will print out in DEV CON since 67 is FALSE
