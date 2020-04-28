@@ -360,8 +360,8 @@ console.log(processed); /// prints NEW VALUE; var processed = 2  in DEV CONSOLE
 /* END */
 
 
-/*Understanding QUEUES*/
-//in compueter science QUEUES are abstract data structures
+/*Understanding QUEUES ---  simulation of the sum of a the functalnaility of a data structure*/
+//in compueter science QUEUES are abstract data structures where items are kept in order
 
 function nextInLine(arr, item) {
 	arr.push(item); ////PUSHES new item to the back of the array 

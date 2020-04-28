@@ -1,3 +1,5 @@
+//NOTE see index.js for notes on each syntax 
+
 function Queues(arr, items) {
 	arr.push(items);
 	return arr.shift();
