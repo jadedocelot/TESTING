@@ -373,9 +373,10 @@ var testerArr = [1,2,3,4,5];
 console.log("Before:" + JSON.stringify(testerArr)); 
 //present VAR = testerArr before being manipulated  --- [1,2,3,4,5] printed in DEV Console
 console.log(nextInLine (testerArr, 6)); 
-//1. arr.push()
-//
+//1. arr.push() will add 6 to the back of the array
+//2. return arr.shift() remove the 1 from testerArra and print removed number in DEV CONSOLE
 //NOTE Note: The return value of the shift method is the removed item.
 // JSON.STRINGIFY converts JS value into a string
-console.log("After:" + JSON.stringify(testerArr)); /// will present var testerArr POST manmipulation  ---> [2,3,4,5,6] printed in DEV CONSOLE
+console.log("After:" + JSON.stringify(testerArr)); 
+/// will present var testerArr POST manmipulation  ---> [2,3,4,5,6] printed in DEV CONSOLE
 
