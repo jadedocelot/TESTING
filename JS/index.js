@@ -354,20 +354,28 @@ processed = functionArg(5); /// functionArg mathmatical expression has now been 
 
 console.log(processed); /// prints NEW VALUE; var processed = 2  in DEV CONSOLE
 
+
+
+
+/* END */
+
+
 /*Understanding QUEUES*/
 //in compueter science QUEUES are abstract data structures
 
 function nextInLine(arr, item) {
-	arr.push(item);
-	return arr.shift();  //NOTE Note: The return value of the shift method is the removed item.
-
+	arr.push(item); ////PUSHES new item to the back of the array 
+	return arr.shift(); /// .SHIFT() will remove the first item of the array and present the removed # in DEV CONSOLE 
 }
 
 var testerArr = [1,2,3,4,5];
 
-console.log("Before:" + JSON.stringify(testerArr)); //present VAR = testerArr before being manipulated
-console.log(nextInLine (testerArr, 6)); ///
+console.log("Before:" + JSON.stringify(testerArr)); 
+//present VAR = testerArr before being manipulated  --- [1,2,3,4,5] printed in DEV Console
+console.log(nextInLine (testerArr, 6)); 
+//1. arr.push()
+//
 //NOTE Note: The return value of the shift method is the removed item.
 // JSON.STRINGIFY converts JS value into a string
-console.log("After:" + JSON.stringify(testerArr));
+console.log("After:" + JSON.stringify(testerArr)); /// will present var testerArr POST manmipulation  ---> [2,3,4,5,6] printed in DEV CONSOLE
 
