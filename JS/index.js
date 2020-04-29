@@ -405,7 +405,10 @@ console.log(canyouGivemeSomeAdvice(true)); /// "code and never work another day 
 console.log(canyouGivemeSomeAdvice(false)); // Ragardless, no turning back now" is returned  --- Since function is FALSE 
 
 
-/* comparrison with the EQUALITY operator */
+///END//
+
+/* ANCHOR comparrison with the EQUALITY operator */
+
 // Equality operator ==
 ///NOTE that = is an asign operator
 
@@ -420,7 +423,19 @@ function guessmyAge(myVal) {
 
 }
 
-console.log(guessmyAge(28));  ///consider this a TEST INPUT for now ANCHOR 
+console.log(guessmyAge(28));  ///consider this a TEST INPUT for now  
 //"This is my correct age!" will print out in DEV CON since 28 is TRUE
 console.log(guessmyAge(67));
 //"This is not my correct age" will print out in DEV CON since 67 is FALSE
+
+
+//Below is on how to confirm is the value is TRUE of FALSE
+1 == 1  // True 
+1 == 2 // False
+1 == "1" // True
+"3" == 3 // True
+
+///END////
+
+/*Using strict eqaulity operators*/
+// Are the counterpart to equality operators
