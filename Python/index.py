@@ -17,3 +17,15 @@ REVIEW #umbers are mainly two types, integers (integer is a whole number that is
 
 #NOTES END
 
+#SINGLE and DOUBLE line quotes
+##both perform the same action to specify STRINGS
+
+print('Hello World!') #OUTPUT: Hello World!
+print("Hello World!") #OUTPUT: Hello World!
+
+#TRIPLE line QUOTES
+## will be used when using single or double line quotes within the triple quotes
+###All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+
+
+print('''He looked at me and said; "Hello world."''') # OUTPUT: He looked at me and said; "Hello world."
