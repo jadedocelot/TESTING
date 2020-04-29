@@ -410,6 +410,7 @@ console.log(canyouGivemeSomeAdvice(false)); // Ragardless, no turning back now" 
 /* ANCHOR comparrison with the EQUALITY operator */
 
 // Equality operator ==
+// == will perform a conversion if the value is entered in as a string or as a number
 ///NOTE that = is an asign operator
 
 function guessmyAge(myVal) {
@@ -438,4 +439,41 @@ console.log(guessmyAge(67));
 ///END////
 
 /*Using strict eqaulity operators*/
+//Strict OPS don't perform conversions
 // Are the counterpart to equality operators
+//3 is a number, '3' is a string 
+
+function strictOp(val) {
+    if  (val === '7') // SRICT EQUAL OPERATORS
+    // Strict Operator will only accept 7 as a number to be TRUE
+    // If '7' as string were entered then it would be considered FALSE
+        return 'This is true!'; // when 7 is logged
+        {
+
+        return 'This is false.';// when '7' as string is logged
+        
+        }
+
+}
+
+console.log(strictOp(7)); // FALSE  -- 'This  is false.' is printed in DEV LOG
+console.log(strictOp(10)); // FALSE -- 'This  is false.' is printed in DEV LOG
+console.log(strictOp('7')) // TRUE -- 'this is true' is printed in DEV LOG
+
+// The TYPEOF operator will determine the type of variable will be used
+
+var variable;
+var arrVar = 'Argument';
+
+
+console.log(typeof '7'); // Output in DEV CONSOLE: "string"
+console.log(typeof 7); // Output in DEV CONSOLE: "number"
+console.log(typeof variable); // Output in DEV CONSOLE: "UNdefined variable"
+console.log(typeof 'operator'); // Output in DEV CONSOLE: "Operator"
+console.log(typeof arrVar); // Output in DEV CONSOLE: DECLARED variable
+
+
+
+
+///END//////
+
