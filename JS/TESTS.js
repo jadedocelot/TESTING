@@ -1,25 +1,13 @@
-//(>=) compares values (Unlike strict operators) where "" >= # = TRUE
-//
-/*
-6   >=  6   // true
-7   >= '3'  // true
-2   >=  3   // false
-'7' >=  9   // false
-*/
-
-function greaterThanEqual (val) {
-    if(val >= 10) 
-        return "10 or over";
-    {
-        if (val >= 100)
-        return "100 or Over";
+function nextinLine(arr,item) {
+    arr.push();
+    return arr.shift();
 
 }
 
-        return "Under 10"
+var testArr = [1,2,3,4,5];
 
-}
+console.log("Before:" + JSON.stringify(testArr));
+console.log(nextinLine (testArr, 6));
+console.log("After:" + JSON.stringify(testArr));
 
-console.log(greaterThanEqual('10'));
-console.log(greaterThanEqual('100'));
-console.log(greaterThanEqual(3));
+

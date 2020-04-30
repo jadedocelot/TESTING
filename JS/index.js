@@ -232,7 +232,7 @@ console.log(myArray);
 
 var myList = [["Edgarlll", 29], ["Allison", 35], ["Meg", 25], ["Danica", 27], ["Kevin", 27]];
 
-/*end*/ TODO 
+/*end*/  
 
 /* calling or to invoke a function to be shown in console*/
 
@@ -562,7 +562,7 @@ console.log(testGreaterThan(234)); //OUTPUT: "Over 100"
 // Greater Than Equal To (>=)
 
 //(>=) compares values (Unlike strict operators) where "" >= # = TRUE
-//
+
 
 6   >=  6   // true
 7   >= '3'  // true
@@ -571,16 +571,18 @@ console.log(testGreaterThan(234)); //OUTPUT: "Over 100"
 
 
 function greaterThanEqual (val) {
-    if(val >= 10) 
-        return "10 or over";
+    if(val >= 10)  
+        return "10 or over"; // if a #/STRING >= is entered in 
     {
         if (val >= 100)
-        return "100 or Over";
+        return "100 or Over"; // if a #/STRING >= is entered in 
 }
 
-        return "Under 10";
+        return "Under 10";// if a #/STRING < is entered in
 }
 
-console.log(greaterThanEqual('10'));
-console.log(greaterThanEqual('100'));
-console.log(greaterThanEqual(3));
+console.log(greaterThanEqual('10')); // TRUE
+console.log(greaterThanEqual('100')); // TRUE 
+console.log(greaterThanEqual(8)); //FALSE 
+
+/* END */
