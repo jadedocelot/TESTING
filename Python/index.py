@@ -26,6 +26,61 @@ print("Hello World!") #OUTPUT: Hello World!
 #TRIPLE line QUOTES
 ## will be used when using single or double line quotes within the triple quotes
 ###All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+### perks of the .Format method is that it automatically converts the string
 
 
 print('''He looked at me and said; "Hello world."''') # OUTPUT: He looked at me and said; "Hello world."
+
+					
+					<-- FORMAT METHOD -->
+
+#NOTE: Strings are immmutable, that means once you have created a string they can no longer be changed
+
+#the Format Method
+##When using the format method, values are always indexed starting with 0 (0,1,2,3,4,5)
+### .format()
+### Always inlcude the specification number within {}
+### Python always start counting from 0-1
+
+name = 'Edgar'
+age = 28
+
+print('{0} is {1} which is young but its also not.'.format(age, name)) 
+#name = 0 and age = 1 
+#always include the VAR name at the end within the parentheses in the order in which you would like them to outputted (THE LAST PART IS VERY IMPORTANT)
+
+print('{0} is my current age.'.format(age))
+
+##the format method can be called to substitute those specifications with corresponding arguments
+
+# there is another wat of achieving teh same results, which is can be done using STRING CONCENTRATIONS thoughis it is much ulier and error-prone
+
+name + 'is' + str(age) + 'years old.' #String concentrations
+
+## NOTE that numbers are optional when using format method
+
+print('{} is {} which is young but its also not.'.format(age, name)) 
+# this would also work
+
+# You may also use VAR NAMES within Parameters in place of number
+
+print('My name is {name} and I am currently {age}'.format(name=name, age=age))
+#notice how you have to declare the names at the end within the parantheses
+## You will get the same results outputted
+
+<-- F-STRINGS -->
+
+#Though all being said PYTHON 3.6 introduced F-STRINGS
+
+print(f'My name is {name} and I am {age}') 
+# Will also print out "My name is Edgar and I am 28"
+#Though note that F STRING will only work in PYTHON 3 
+
+
+
+
+
+
+
+
+

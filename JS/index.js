@@ -473,7 +473,37 @@ console.log(typeof 'operator'); // Output in DEV CONSOLE: "Operator"
 console.log(typeof arrVar); // Output in DEV CONSOLE: DECLARED variable
 
 
-
-
 ///END//////
 
+<<<<<<-----Inequality operator----------->
+// != is the inequality operator
+// The inequality op does the opposite of the equality operator presenting a FALSE value as oppose  to == being TRUE
+// Like the equality OP the inequality will convert data types of value white comparring I E example below 
+  
+    1 != 1 // Returns FALSE
+    '1' != 1 // Returns FALSE
+    1 != '1' // Returns FALSE 
+    1 != 2 // Returns TRUE
+
+// == is TRUE 
+// != is FALSE
+
+function tellTheTruth(guessNumber) {
+    if (guessNumber != 28) // The ineqaulity operator is stating that anything NOT 28 is FALSE
+    return "This is false";
+
+    {
+
+    return "This is True";
+
+
+    }
+
+}
+console.log(tellTheTruth(23)); // OUTPUT: "This is false"
+console.log(tellTheTruth(28)); // OUTPUT: "This is TRUE"
+
+/* STRICT INEQUALITY OPERATORS */
+// !==
+// Conversion is not performed
+//if the value is entered in as a STRING then a STRING must be entered in in order to match VICE VERSA with numbers
