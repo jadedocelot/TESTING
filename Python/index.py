@@ -76,5 +76,6 @@ print(f'My name is {name} and I am {age}')
 # Will also print out "My name is Edgar and I am 28"
 #Though note that F STRING will only work in PYTHON 3 
 
-
+#decimal (.) precision of 3 for FLOAT '0.333'
 print('{0:.3f}'.format(1.0/3))
+#OUTPUT: 0.333  

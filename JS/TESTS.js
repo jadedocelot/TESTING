@@ -1,19 +1,25 @@
-// Greater Than Operator 
+//(>=) compares values (Unlike strict operators) where "" >= # = TRUE
+//
+/*
+6   >=  6   // true
+7   >= '3'  // true
+2   >=  3   // false
+'7' >=  9   // false
+*/
 
-function testGreaterThan(val) {
-    if(val > 100) // if the 
-        return "Over 100"
+function greaterThanEqual (val) {
+    if(val >= 10) 
+        return "10 or over";
     {
-    
-    if(val > 10) // if the value entered is GREATER than 10 then you are "OVER 10"
-        return "Over 10"
-
-    }
-
-    return "10 or Under" // if a value of 10 or lower is entered in 
+        if (val >= 100)
+        return "100 or Over";
 
 }
 
-console.log(testGreaterThan(10)); // OUTPUT: "10 or Under"
-console.log(testGreaterThan(25)); // OUTPUT: "Over 10"
-console.log(testGreaterThan(234)); //OUTPUT: "Over 100"
+        return "Under 10"
+
+}
+
+console.log(greaterThanEqual('10'));
+console.log(greaterThanEqual('100'));
+console.log(greaterThanEqual(3));
