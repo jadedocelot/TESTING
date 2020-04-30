@@ -77,10 +77,4 @@ print(f'My name is {name} and I am {age}')
 #Though note that F STRING will only work in PYTHON 3 
 
 
-
-
-
-
-
-
-
+print('{0:.3f}'.format(1.0/3))

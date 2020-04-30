@@ -507,3 +507,49 @@ console.log(tellTheTruth(28)); // OUTPUT: "This is TRUE"
 // !==
 // Conversion is not performed
 //if the value is entered in as a STRING then a STRING must be entered in in order to match VICE VERSA with numbers
+
+    1 != 1 // Returns FALSE
+   '1' != 1 // Returns TRUE
+    1 != '1' // Returns TRUE 
+    1 != 2 // Returns TRUE  
+
+    function tellTheTruth(guessNumber) {
+        if (guessNumber !== 28)
+        return "This is false";
+    
+        {
+    
+        return "This is True";
+    
+    
+        }
+    
+    
+    }
+    
+    console.log(tellTheTruth(28)); "This is True"
+    console.log(tellTheTruth('28')); "This is False"
+
+    /* END */
+
+    <----- GREATER Than Operator ----->
+   
+ // Greater Than Operator 
+
+function testGreaterThan(val) {
+    if(val > 100) // if the 
+        return "Over 100"
+    {
+    
+    if(val > 10) // if the value entered is GREATER than 10 then you are "OVER 10"
+        return "Over 10"
+
+    }
+
+    return "10 or Under" // if a value of 10 or lower is entered in 
+
+}
+
+console.log(testGreaterThan(10)); // OUTPUT: "10 or Under"
+console.log(testGreaterThan(25)); // OUTPUT: "Over 10"
+console.log(testGreaterThan(234)); //OUTPUT: "Over 100"
