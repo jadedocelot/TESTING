@@ -1,5 +1,4 @@
-greeting = ("Hey fucker!") ## greeting is now a declared VAR
-
+greeting = ("Hey fucker!") 
 
 print(greeting) #this will proceed to print HEY FUCKER!
 
@@ -16,6 +15,8 @@ REVIEW #umbers are mainly two types, integers (integer is a whole number that is
 * https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/a/negative-exponents-review
 
 #NOTES END
+
+<-- LITERAL CONSTANTS -->
 
 #SINGLE and DOUBLE line quotes
 ##both perform the same action to specify STRINGS
@@ -47,7 +48,7 @@ age = 28
 
 print('{0} is {1} which is young but its also not.'.format(age, name)) 
 #name = 0 and age = 1 
-#always include the VAR name at the end within the parentheses in the order in which you would like them to outputted (THE LAST PART IS VERY IMPORTANT)
+#always include the STRING name at the end within the parentheses in the order in which you would like them to outputted (THE LAST PART IS VERY IMPORTANT)
 
 print('{0} is my current age.'.format(age))
 
@@ -62,7 +63,7 @@ name + 'is' + str(age) + 'years old.' #String concentrations
 print('{} is {} which is young but its also not.'.format(age, name)) 
 # this would also work
 
-# You may also use VAR NAMES within Parameters in place of number
+# You may also use STRING NAMES within Parameters in place of number
 
 print('My name is {name} and I am currently {age}'.format(name=name, age=age))
 #notice how you have to declare the names at the end within the parantheses
@@ -85,7 +86,7 @@ print('{0:.3f}'.format(1.0/3))
 print('{name} is {age} years old.'.format(name='Edgar', age=28))  ## Output: Edgar is 28 years old.
 ## enter KEYWORDS within {curly braces}
 ## inlcude within quotes
-##followed by .format() and within include var name as well as value
+##followed by .format() and within include SPEC name as well as value
 
 
 
@@ -131,5 +132,16 @@ Kiss
 me
 guedo!
 
-			<-- RAW LINES -->
+			<-- RAW STRINGS --> TODO ----> The Backslash Plague - https://docs.python.org/3/howto/regex.html
+#A RAW STRING "r" treats BACKLASHES and ESCAPE SEQUENCES within a string as literal characters
+#Always specify a RAW STRING by prefixing with (r) or (R)
 
+print(r"Hello World \n")
+#OUTPUT:
+Hello World \n 
+
+#NOTE always use RAW STRINGS with regular expressions. Otherwise a lot of back whacking may be required
+
+print(r"\\\\section") OUTPUT: \\section
+print("\\\\section") OUTPUT: \\section
+print("\\section") OUTPUT: \section
