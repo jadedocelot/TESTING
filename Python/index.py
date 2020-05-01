@@ -79,3 +79,30 @@ print(f'My name is {name} and I am {age}')
 #decimal (.) precision of 3 for FLOAT '0.333'
 print('{0:.3f}'.format(1.0/3))
 #OUTPUT: 0.333  
+#Specifications can be placed within qoutes (or single quotes)
+
+#KEY-WORD based FORMAT METHOD
+print('{name} is {age} years old.'.format(name='Edgar', age=28))  ## Output: Edgar is 28 years old.
+## enter KEYWORDS within {curly braces}
+## inlcude within quotes
+##followed by .format() and within include var name as well as value
+
+
+
+#PRINT always ends with an "invisible line" character (/n)
+print("Edgar")
+print("Ortega")
+## The above will print out as follows:
+Edgar
+Ortega 
+
+#To prevnt a newline (/n) from being printed
+print("Edgar" end="")
+print("Ortega" end="")
+
+#OUTPUT:
+EdgarOrtega
+
+#In order to include a space between words, you can includea a space within the quotes of the END speceification
+
+
