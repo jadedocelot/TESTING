@@ -103,6 +103,33 @@ print("Ortega" end="")
 #OUTPUT:
 EdgarOrtega
 
-#In order to include a space between words, you can includea a space within the quotes of the END speceification
+#In order to include a space between words, you have to add a space between the quotes of every END specification NOTE: That each END represents a space for every line
+#The last print function will not require a space
+print("Edgar", end=" ")
+print("Ortega", end="")
+#OUTPUT:
+Edgar Ortega
 
+<----ESCAPE SEQUENCE------>
+
+#Your string contains a single quote ('), Example: "so You're goiong to the game tomorrow?". Including that single quote will confuse Python by having it think that's the end of the string
+#The ESCAPE SEQUENCE (\) .This will need to be specified before the single quote (') in order to prevent any confusion
+print("So, you\'re going out tomorrow night?")
+#OUTPUT: 
+So, You're going out tomorrow night?
+
+#Another wat for preventing confusion is to include a single line quote (') in a double quoted string ("")
+print("You're a twat.")
+#OUTPUT:
+You're a twat.
+
+#What if you wanted to specify a two-line string?
+##The escape sequence for the the NEW LINE CHARACTER (\n) is required
+print("Kiss\nme\nguedo!")
+#OUTPUT:
+Kiss
+me
+guedo!
+
+			<-- RAW LINES -->
 
