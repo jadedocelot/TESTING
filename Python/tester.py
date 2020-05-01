@@ -1,2 +1,2 @@
-print("Edgar", end='')
-print("Orteg", end='')
+print("Edgar", end=' ')
+print("Ortega", end=' ')
