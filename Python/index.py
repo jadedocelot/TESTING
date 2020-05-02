@@ -145,3 +145,34 @@ Hello World \n
 print(r"\\\\section") OUTPUT: \\section
 print("\\\\section") OUTPUT: \\section
 print("\\section") OUTPUT: \section
+
+<-- VARIABLES --> (FINALLY!!)
+
+# Variables (VAR) are used to store information as well as manipulating them as well. There value can vary, i.e . you can store anything in a variable
+# Var are just parts of the computers memory
+# Unlike literal constants you need some method of accessing these VAR hence you give them names
+# VAR are examples of identifiers 
+# Identifiers are names given to identify something
+
+		*** IDENTIFIERS ***
+	# The character of an identifier must always start with a letter
+		##uppercase, lowercase, and unicode charaters (or even underscroe(_)) OR digits
+		##They are also case sensitive (myName or Myname (Both not the same))
+		##Remember that that lowercase n is FORMER and uppercase N is LATTER (KEEP IN MIND: camelCase)
+			### FORMER and LATTER are bothe terms to denote an items place in a two-place sequence
+			### FORMER refers to the first of the set while LATTER refers to the second, or last item
+# VALID identifiers
+Planet_Greeting = "Hello World!" OUTPUT:Hello World!
+planet_greeting = "Hello World!" OUTPUT:Hello World!
+Planetgreeting = "Hello World!" OUTPUT:Hello World!
+planetGreeting = "Hello World!"OUTPUT:Hello World!
+greeting_69 = "Hello World!" OUTPUT:Hello World!
+
+#types of INVALID indentifiers:
+ - 2things
+ - this is spaced out
+ -  my_name
+ - >alb2_c3
+
+# Variables can hold values of differnt types called data types. The basic type are NUMBERS and STRINGS 
+# You can even create your own TYPES using classes 
