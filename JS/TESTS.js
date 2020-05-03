@@ -1,21 +1,20 @@
+//ELSE STATEMENT else 
+
 function esleState(val) {
 
-    var result = "";
 
     if(val > 5) {
         return "Bigger than 5";
    
-    }else {
+    }else { // IF its < 5 
 
     return "5 of smaller";
     }
 
 
-    return result;
-
 }
 
 
-console.log(esleState(9));
+console.log(esleState(98));
 console.log(esleState(4));
 
