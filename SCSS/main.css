@@ -13,17 +13,17 @@ h1 {
   font-weight: 10;
 }
 
-#backUp {
-  color: red;
+#red {
+  color: black;
   position: absolute;
-  bottom: 186px;
-  right: 532px;
+  bottom: 480px;
+  right: 580px;
   font-size: 60px;
 }
 
 #github {
   position: relative;
-  width: 49px;
+  width: 40px;
   right: -95%;
   top: -90%;
 }
@@ -50,6 +50,7 @@ h1 {
 /* Just to make the grid visible */
 .grid > * {
   background: #1c1c1c;
-  border: 1px white solid;
+  border: 1px 	grey solid;
+  /* TODO ANIMATION and kEYFRAMES */
 }
 /*# sourceMappingURL=main.css.map */

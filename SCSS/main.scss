@@ -11,24 +11,24 @@ body {
 
 
 h1{
-    color: 	red;
+    color: 	black;
     font-family: 'Raleway Dots', cursive;
     font-size: 54px;
     font-weight: 10;
 }
 
 #red {
-    color: grey;
+    color: black;
     position: absolute;
-    bottom: 5000px;
-    right: 532px;
+    bottom: 480px;
+    right: 580px;
     font-size: 60px;
 
 }
 
 #github {
  position: relative;
- width: 90px;
+ width: 40px;
  right: -95%;
  top: -90%;
 }
@@ -57,6 +57,6 @@ h1{
   
   .grid > * {
     background: #1c1c1c;
-    border: 1px white solid;
+    border: 1px 	grey solid ;
     /* TODO ANIMATION and kEYFRAMES */
-  
+  }
