@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  color: #eaeaf6;
+  color: black;
   font-family: 'Raleway Dots', cursive;
   font-size: 54px;
   font-weight: 10;
@@ -16,15 +16,16 @@ h1 {
 #backUp {
   color: red;
   position: absolute;
-  bottom: 180px;
+  bottom: 186px;
   right: 532px;
   font-size: 60px;
 }
 
 #github {
   position: relative;
-  width: 54px;
-  right: -90%;
+  width: 49px;
+  right: -95%;
+  top: -90%;
 }
 
 .grid {
@@ -48,7 +49,7 @@ h1 {
 
 /* Just to make the grid visible */
 .grid > * {
-  background: rgba(0, 0, 0, 0.1);
+  background: #1c1c1c;
   border: 1px white solid;
 }
 /*# sourceMappingURL=main.css.map */
