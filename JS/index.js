@@ -675,3 +675,8 @@ function logicOperator(val) {
 console.log(logicOperator(15)); //FALSE  -- "Use your imagination." 
 console.log(logicOperator(89)); //FASLE --- "Use your imagination." 
 console.log(logicOperator(28)); //TRUE  ---- "Hey man, You're on teh right track."
+/* END */
+
+     <--- ELSE statements (else) --> //FINALLY!! 
+
+     
