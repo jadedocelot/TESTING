@@ -619,3 +619,59 @@ console.log(lessThan(23)); OUTPUT: "Under 25" //TRUE
 console.log(lessThan(25)); OUTPUT: "Under 50" //TRUE
 console.log(lessThan(87)); OUTPUT: "Over 50" //FALSE
 
+<--- LESS THAN EQUAL TO --->
+// Less than equal to (<=)
+// Less than equal to also converts data types
+
+function lessEqual(val) {
+    if(val <= 25) // if the entered value is LESS THAN OR EQUAL TO 25
+        return "less than or eaqual to 25....Bitch"; //TRUE
+    
+    {
+        if(val <= 50)
+            return "less than or equal to 50...........Bitch" // TRUE
+
+    }
+            return "Why you a Bitch?" // FALSE 
+
+}
+
+console.log(lessEqual(23)); //OUTPUT: less than or equal to 25....Bitch --- TRUE
+console.log(lessEqual('48')); // OUTPUT: less than or equal to 50....Btich ----- TRUE
+console.log(lessEqual(98)); // OUTPUT: Why are you a Bitch? --- FALSE
+
+
+/*END*/
+
+<-- LOGICAL AND OPERATORS -->
+// Logical AND operators (&&) returns TRUE if and only if the "OPERANDs" to the left and right of it are TRUE
+function operAnd(Num) {
+    if(Num >= 25 && Num <= 50) //if the calueis greater than equal to (>=) 25 LOGICAL and operator (&&) less than equal to (<=) 50 then the rerturn is TRUE ("Yes")
+        return "Yes";
+        {
+            return "No"; // Otherwise anything less than 25 && greater than 50 is FALSE
+        }
+
+    }
+
+console.log(operAnd(98));  //OUTPUT: Yes ----TRUE
+console.log(operAnd(12));  //OUTPUT: No ----FALSE
+
+/*END*/
+
+<-- LOGICAL OR OPERATORS -->
+//Loggical or operator (||) returns  TRUE if either of the operands is TRUE. Otherwise, it returns FALSE
+
+function logicOperator(val) {
+    if(val < 25 || val > 50) // if the entered value is LESS than 25 or(||) GREATER than 50 then the return is FALSE
+        return "Use your imagination."  // FALSE
+    {
+        return "Hey man, You're on the right track."
+    }
+
+}
+
+
+console.log(logicOperator(15)); //FALSE  -- "Use your imagination." 
+console.log(logicOperator(89)); //FASLE --- "Use your imagination." 
+console.log(logicOperator(28)); //TRUE  ---- "Hey man, You're on teh right track."
