@@ -646,7 +646,7 @@ console.log(lessEqual(98)); // OUTPUT: Why are you a Bitch? --- FALSE
 <-- LOGICAL AND OPERATORS -->
 // Logical AND operators (&&) returns TRUE if and only if the "OPERANDs" to the left and right of it are TRUE
 function operAnd(Num) {
-    if(Num >= 25 && Num <= 50) //if the calueis greater than equal to (>=) 25 LOGICAL and operator (&&) less than equal to (<=) 50 then the rerturn is TRUE ("Yes")
+    if(Num >= 25 && Num <= 50) //if the value is  greater than equal to (>=) 25 LOGICAL and operator (&&) less than equal to (<=) 50 then the rerturn is TRUE ("Yes")
         return "Yes";
         {
             return "No"; // Otherwise anything less than 25 && greater than 50 is FALSE
@@ -679,4 +679,93 @@ console.log(logicOperator(28)); //TRUE  ---- "Hey man, You're on teh right track
 
      <--- ELSE statements (else) --> //FINALLY!! 
 
-     
+//ELSE STATEMENT else 
+
+function esleState(val) {
+
+
+    if(val > 5) {
+        return "Bigger than 5";
+   
+    }else { // IF its < 5 
+
+    return "5 of smaller";
+    }
+
+
+}
+console.log(esleState(98));
+console.log(esleState(4));
+
+<-- ELES IF statement -->
+
+
+     //converts logic to ELSE if statement
+
+function elseIf(val) {
+    if (val > 10){ 
+        return "More than 10"; /// if value is greater than 10 
+
+}else if (val < 5) { 
+    return "less than 5"; // else if value is less thatn 5
+} else {
+    return "Betweem 5 and 10" /// any number between 5 and 10
+}
+
+}
+    
+
+console.log(elseIf(14));  //true - More than 10
+console.log(elseIf(3));  //true  - Less than 5
+console.log(elseIf(8)); //false - between 5 and 10
+
+/* END */
+
+
+function orderMyFunction(val) {
+    if(val < 5){
+        return "Your guess is less that 5";
+
+    } else if (val < 10) {
+         return "Your guess is less than 10";
+    } else {
+        return "Your guess is more than 10";
+
+    } 
+}
+
+console.log(orderMyFunction(3)); // Your guess is less than 5
+console.log(orderMyFunction(6)); // Your guess is less than 10
+console.log(orderMyFunction(12)); // Your guess is more than 10
+
+
+<-- LOGICAL ORDER in ELSE IF statements -->
+
+// NOTE order IS important with IF and ELSE IF statements
+// Function works from TOP to BOTTOM
+
+function warmCold(val){
+    if (val < 25) {
+        return "cold";
+
+    } else if (val < 50 ) {
+        return "Warmer"; 
+        
+    } else if (val < 75) {
+        return "Hotter"
+    } 
+         else return "You're on the money";
+         
+    }
+
+console.log(warmCold(17));   // COLD
+console.log(warmCold(27));  // Warmer
+console.log(warmCold(72))  // HOTTER
+console.log(warmCold(80));// You're on the money 
+
+
+/* END */
+
+
+
+ 

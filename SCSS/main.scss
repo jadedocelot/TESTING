@@ -17,14 +17,23 @@ h1{
     font-weight: 10;
 }
 
-#red {
+#code {
     color: black;
     position: absolute;
     bottom: 480px;
     right: 580px;
     font-size: 60px;
-
 }
+
+#square {
+  position: relative;
+  width: 10px;
+  height: 100px;
+  background: black;
+  right: -220px;
+  top: -129px;
+}
+
 
 #github {
  position: relative;

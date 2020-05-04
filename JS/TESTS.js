@@ -1,20 +1,20 @@
-//ELSE STATEMENT else 
+function warmCold(val){
+    if (val < 25) {
+        return "cold";
 
-function esleState(val) {
-
-
-    if(val > 5) {
-        return "Bigger than 5";
-   
-    }else { // IF its < 5 
-
-    return "5 of smaller";
+    } else if (val < 50 ) {
+        return "Warmer"; 
+        
+    } else if (val < 75) {
+        return "Hotter"
+    } 
+         else return "You're on the money";
+         
     }
 
+console.log(warmCold(17));   // COLD
+console.log(warmCold(27));  // Warmer
+console.log(warmCold(72))  // HOTTER
+console.log(warmCold(80));// You're on the money 
 
-}
-
-
-console.log(esleState(98));
-console.log(esleState(4));
 
