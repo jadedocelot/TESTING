@@ -1,40 +1,29 @@
+    // A switch statement can come in hand when you have a number of options to choose from      
+   // Switch statements tests a value and can have various possible values 
+  // CASE values are tested with strict equality (===)
+ // (if a VAR were to have many options) --- 
 
-var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
-function golfScore(par, strokes) {
-  // Only change code below this line
- //   
-    if (strokes == 1) {
-        return names[0];
 
-    } else if (strokes <= par -2)  {
-        return names[1];
-    
-    } else if (strokes == par -1) {
-         return names[2]; 
-             
-    } else if (strokes == par){
-        return names[3];
+function caseSwitch(val){
+    answer = ""; 
 
-    } else if (strokes == par +1) {
-        return names[4];
-        
-    } else if (strokes == par +2) {
-        return names[5];
+    switch(val) { 
+        case 1: 
+        case "alpha":
+            answer = "move forward"; /// if 1 or alpha is logged in
+        break; //  NOTE BREAK is required in order  to move on to the next CASE
+        case 2: 
+            answer = "beta";
+        break;
+        case 3:
+             answer = "gamma";
+        break;
+        case 4:
+             answer = "delta";
 
-    } else if (strokes >= par +3) {
-        return names[6]
-        
     }
-    
+    return answer /// REMINDER  
 
-  // Only change code above this line
 }
 
-console.log(golfScore(1, 1));
-console.log(golfScore(3, -2));
-console.log(golfScore(3, 2));
-console.log(golfScore(3, 3));
-console.log(golfScore(3,4));
-console.log(golfScore(3,5));
-console.log(golfScore(3, 7));
-
+console.log(caseSwitch("alpha"));

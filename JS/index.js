@@ -798,7 +798,7 @@ console.log(warmCold(80));// You're on the money
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) { 
   // Only change code below this line
-    if (strokes == 1) {
+    if (strokes == 1) { // if only one stroke is required then a HOLE-IN-ONE is returned
         return names[0];
 
     } else if (strokes <= par -2)  {
@@ -824,12 +824,44 @@ function golfScore(par, strokes) {
   // Only change code above this line
 }
 
-console.log(golfScore(1, 1));
-console.log(golfScore(3, -2));
-console.log(golfScore(3, 2));
-console.log(golfScore(3, 3));
-console.log(golfScore(3, 4));
-console.log(golfScore(3, 5));
-console.log(golfScore(3, 7));
+console.log(golfScore(1, 1)); //Hole-in-one!
+console.log(golfScore(3, -2)); //Eagle
+console.log(golfScore(3, 2)); //Birdie
+console.log(golfScore(3, 3)); //Par
+console.log(golfScore(3, 4)); //Bogey
+console.log(golfScore(3, 5)); //Double-Bogey
+console.log(golfScore(3, 7)); //Go Home!
 
 /* END */ 
+
+
+
+    // A switch statement can come in hand when you have a number of options to choose from      
+   // Switch statements tests a value and can have various possible values 
+  // CASE values are tested with strict equality (===)
+ // (if a VAR were to have many options) --- 
+
+
+ function caseSwitch(val){
+    answer = ""; 
+
+    switch(val) { 
+        case 1: 
+        case "alpha":
+            answer = "move forward"; /// if 1 or alpha is logged in
+        break; //  NOTE BREAK is required in order  to move on to the next CASE
+        case 2: 
+            answer = "beta";
+        break;
+        case 3:
+             answer = "gamma";
+        break;
+        case 4:
+             answer = "delta";
+
+    }
+    return answer /// REMINDER  
+
+}
+
+console.log(caseSwitch("alpha"));
