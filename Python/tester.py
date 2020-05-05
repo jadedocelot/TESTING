@@ -1,3 +1,11 @@
-test = "commit worekd!"
+i = 5
 
-#this is new
+print(i)
+
+i = i + 5
+
+print(50 / i)
+
+greeting = "Hello World!"
+
+print(greeting)

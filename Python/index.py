@@ -176,3 +176,27 @@ greeting_69 = "Hello World!" OUTPUT:Hello World!
 
 # Variables can hold values of differnt types called data types. The basic type are NUMBERS and STRINGS 
 # You can even create your own TYPES using classes 
+
+# Python referes to anything in the program as an OBJECT
+	## this is meant in the generic sense; insead of saying "the something", we say "The object"
+
+NOTE ## Python is strongly object oriented, that mostly everything is an object I E numbers, strings, and functions
+
+## a few FUN examples below
+
+i = 5 
+## Assigning a literal constant value 5 to the variable i using the assignment operator (=)
+## /\/\ This is also refered to a statement becuase it states that somehting should be done 
+
+print(i)
+## OUTPUT: 5
+
+i = 5 + i ### 5 + 5 -- the we added 5 to the value stored in i 
+print(50 / i) ## 50 divided by 10 
+## OUTPUT: 5.0	
+
+greeting = "Hello World!"
+
+print(greeting)
+## OUTPUT: Hello World!
+

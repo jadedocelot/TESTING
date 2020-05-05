@@ -73,5 +73,6 @@ h1{
   }
   @keyframes Grid{
     0%   {border: 1px red solid ; }
-    50% {border: 1px grey solid; }
-    100%{border: 1px red solid;}} 
+    50% {border: 1px grey solid; opacity: 0.1;}
+    100%{border: 1px red solid;}
+  } 
