@@ -191,7 +191,7 @@ i = 5
 print(i)
 ## OUTPUT: 5
 
-i = 5 + i ### 5 + 5 -- the we added 5 to the value stored in i 
+i = 5 + i ### 5 + 5 -- the we added 5 to the value stored in i 	
 print(50 / i) ## 50 divided by 10 
 ## OUTPUT: 5.0	
 
