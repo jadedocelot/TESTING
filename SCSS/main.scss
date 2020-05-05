@@ -66,6 +66,12 @@ h1{
   
   .grid > * {
     background: #1c1c1c;
-    border: 1px 	grey solid ;
-    /* TODO ANIMATION and kEYFRAMES */
+    border: 1px 	red solid ;
+    animation: Grid 2s infinite ease-in;
+    animation-duration: 6s;
+		transition: all 2s ease-in-out;
   }
+  @keyframes Grid{
+    0%   {border: 1px red solid ; }
+    50% {border: 1px grey solid; }
+    100%{border: 1px red solid;}} 

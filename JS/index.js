@@ -834,23 +834,23 @@ console.log(golfScore(3, 7)); //Go Home!
 
 /* END */ 
 
-
+<-- using SWITCH STATEMENTS (in case you cant make up your mind) --> 
 
     // A switch statement can come in hand when you have a number of options to choose from      
    // Switch statements tests a value and can have various possible values 
   // CASE values are tested with strict equality (===)
  // (if a VAR were to have many options) --- 
-
+//different actions with different conditions
 
  function caseSwitch(val){
     answer = ""; 
 
-    switch(val) { 
-        case 1: 
-        case "alpha":
+    switch(val) {  // similar  to IF conditions
+        case 1:  // OPTION 1
+        case "alpha": // OPTION 2
             answer = "move forward"; /// if 1 or alpha is logged in
         break; //  NOTE BREAK is required in order  to move on to the next CASE
-        case 2: 
+        case 2:  // //OPTION 1
             answer = "beta";
         break;
         case 3:
@@ -860,8 +860,46 @@ console.log(golfScore(3, 7)); //Go Home!
              answer = "delta";
 
     }
-    return answer /// REMINDER  
+    return answer /// REMINDER  (DONT FORGET)
 
 }
 
 console.log(caseSwitch("alpha"));
+
+/* END */
+
+<-- ADDING a DEFAULT option in a case swtitch statement -->
+
+function caseSwitchDefault (val) {
+    answer = "";
+
+    switch(val) {
+        case 1:
+            answer = "Guess too low";
+        break;
+        case 2:
+             answer = "Warmer";
+        break;
+        case 3:
+            answer = "Hotter";
+        break;
+        case 4:
+            answer = "Correct!"
+        break
+        default: /// This is similar to the ELSE statement  in IF/ELSE --- So like a FALSE value? 
+            answer = "You're out of range";
+
+
+
+    }
+
+        return answer;
+
+
+}
+
+console.log(caseSwitchDefault(1)); // Guess too low
+console.log(caseSwitchDefault(2)); // Warme
+console.log(caseSwitchDefault(3)); // Hotter
+console.log(caseSwitchDefault(4)); // Correct
+console.log(caseSwitchDefault(55)); // You're out of range

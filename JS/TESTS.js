@@ -1,29 +1,34 @@
-    // A switch statement can come in hand when you have a number of options to choose from      
-   // Switch statements tests a value and can have various possible values 
-  // CASE values are tested with strict equality (===)
- // (if a VAR were to have many options) --- 
+function caseSwitchDefault (val) {
+    answer = "";
 
-
-function caseSwitch(val){
-    answer = ""; 
-
-    switch(val) { 
-        case 1: 
-        case "alpha":
-            answer = "move forward"; /// if 1 or alpha is logged in
-        break; //  NOTE BREAK is required in order  to move on to the next CASE
-        case 2: 
-            answer = "beta";
+    switch(val) {
+        case 1:
+            answer = "Guess too low";
+        break;
+        case 2:
+             answer = "Warmer";
         break;
         case 3:
-             answer = "gamma";
+            answer = "Hotter";
         break;
         case 4:
-             answer = "delta";
+            answer = "Correct!"
+        break
+        default: /// This is similar to the ELSE statement  in IF/ELSE --- So like a FALSE value? 
+            answer = "You're out of range";
+
+
 
     }
-    return answer /// REMINDER  
+
+        return answer;
+
 
 }
 
-console.log(caseSwitch("alpha"));
+
+console.log(caseSwitchDefault(1)); // Guess too low
+console.log(caseSwitchDefault(2)); // Warme
+console.log(caseSwitchDefault(3)); // Hotter
+console.log(caseSwitchDefault(4)); // Correct
+console.log(caseSwitchDefault(55)); // You're out of range
