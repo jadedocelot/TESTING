@@ -1007,9 +1007,9 @@ function absTest(a, b) {
 
 
 
- console.log(absTest(-1.7,3)); /// undefined
+ console.log(absTest(-1.7,3)); ///Undefined
  console.log(absTest(-2, 2)); // RETURNS UNDEFINED 
- console.log(absTest(3,2)) // 
- 
+ console.log(absTest(3,2))   //  
+
 
 
