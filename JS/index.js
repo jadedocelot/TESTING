@@ -975,7 +975,7 @@ function absTest(a, b) {
     }
     
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
-   //FIXME del com //MATH.ROUND(X)
+  MATH.ROUND(X)
         /// X = #
         /// return value: The value of a given number rounded to the nearest integer
         /// Description: if the fractional portion of the argument is greater than 0.5, the argument is rounded to the next integer with the higher absolutevalue
@@ -987,7 +987,7 @@ function absTest(a, b) {
         //    math.round(23.6) //24.00
 
 
-    //FIXME DEL COM //MATH.POW(base, exponent)
+    MATH.POW(base, exponent)
         //Base: the base number
         //Exponent: the exponent used to raise the base
         //return value: A number representing the given base taken to the power of the given exponent 
@@ -1000,7 +1000,7 @@ function absTest(a, b) {
 
 
 
-    //FIXME DEL COM  //MATH.SQRT(x)
+    MATH.SQRT(x)
          // X = number
         // return value: the square root of a given number    
        // math.sqrt(9) // 3
@@ -1008,6 +1008,8 @@ function absTest(a, b) {
 
 
  console.log(absTest(-1.7,3)); /// undefined
-//FIXME ///console.log(absTest(-2, 2)); // RETURNS UNDEFINED
+ console.log(absTest(-2, 2)); // RETURNS UNDEFINED 
+ console.log(absTest(3,2)) // 
+ 
 
 

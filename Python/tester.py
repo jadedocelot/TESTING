@@ -1,1 +1,5 @@
-print(2*2*2*2*2*2*2*2*2*2)
+Danica = "This bitch is fucking annpoying sometimes"
+
+
+
+print(Danica)
