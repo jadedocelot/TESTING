@@ -200,3 +200,11 @@ greeting = "Hello World!"
 print(greeting)
 ## OUTPUT: Hello World!
 
+s = 'This is a string.\
+ This continues the string.'
+
+print (s)
+#OUTPUT:
+This is a string. This continues the string
+
+
