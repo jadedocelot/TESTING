@@ -962,3 +962,52 @@ console.log(lessThan(100, 20)); // FLASE
 
 /*END*/
 
+
+//<-- Return early pattern for function --> 
+
+//When a RETURN statement is reached, the execution of the current functionis tops and control returns the calling location
+// The reurn statement stops the exicution of a function and returns a value from that function
+
+function absTest(a, b) {
+    if (a < 0 || b < 0) {
+        return undefined; 
+
+    }
+    
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+   //FIXME del com //MATH.ROUND(X)
+        /// X = #
+        /// return value: The value of a given number rounded to the nearest integer
+        /// Description: if the fractional portion of the argument is greater than 0.5, the argument is rounded to the next integer with the higher absolutevalue
+        ///if it is less than 0.5, the argument is rounded to the integer with the lower absolute value
+        /* EXAMPLES */
+           // math.round(2.9) /// 3.0
+          //  math.round(2.2) // 2.0    
+         //   math.round(23.5)// 23.00
+        //    math.round(23.6) //24.00
+
+
+    //FIXME DEL COM //MATH.POW(base, exponent)
+        //Base: the base number
+        //Exponent: the exponent used to raise the base
+        //return value: A number representing the given base taken to the power of the given exponent 
+            // NOTE A to the power of B 
+           // A: BASE B: EXPONENT
+
+        /*EXAMPLE*/
+            // Math.pow(7,4) // 2401
+           // Math.pow(2, 10) //1024
+
+
+
+    //FIXME DEL COM  //MATH.SQRT(x)
+         // X = number
+        // return value: the square root of a given number    
+       // math.sqrt(9) // 3
+
+
+
+ console.log(absTest(-1.7,3)); /// undefined
+//FIXME ///console.log(absTest(-2, 2)); // RETURNS UNDEFINED
+
+
