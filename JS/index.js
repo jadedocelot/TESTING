@@ -1011,5 +1011,179 @@ function absTest(a, b) {
  console.log(absTest(-2, 2)); // RETURNS UNDEFINED 
  console.log(absTest(3,2))   //  
 
+ /* END */
 
+ <-- Counting c ards --> 
+
+// ANCHOR EDGAR METHOD 1
+
+var count = 0; // Player  starts with 0 
+
+function cc(card) {
+    if (card == 2 || card < 6) { 
+        count ++;
+
+    } switch(card) {
+      case 10:
+      case 'J':
+      case 'Q':
+      case 'K':
+      case 'A':
+       count --;
+    }
+
+        var holdbet = 'hold';
+            if (count > 0) {
+                holdbet = 'bet'
+            }
+
+            return count + " " + holdbet;
+
+    }
+
+cc(2); cc(2); cc(5); cc('K'); cc(2);
+console.log(cc())
+
+
+//ANCHOR EDGAR METHOD 2 
+var count = 0; // Player  starts with 0 
+
+function cc(card) {
+    if (card == 2 || card < 6) { 
+        count += 1;
+
+    } else if(card == 10 || card == 'j' || card == 'q' || card == 'k' || card == 'a') {
+        count -= 1;
+    }
+
+        var holdbet = 'hold';
+            if (count > 0) {
+                holdbet = 'bet'
+            }
+
+            return count + " " + holdbet;
+
+    }
+
+cc(2); cc(2); cc(5); cc('K'); cc(2);
+console.log(cc())
+
+
+ // 1st METHOD
+ var count = 0; // Start value is 0
+
+function cc(card) {
+  // Only change code below this line
+  switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++; // ADD 1 
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--; // subtract 1
+      break;
+  }
+
+  var holdbet = 'Hold'
+  if (count > 0) {
+    holdbet = 'Bet' // if the remaining count is larger than 0 then VAR holdbet will be changed to BET
+  }
+
+  return count + " " + holdbet;
+  // Only change code above this line
+  // " " is needed to include a space between remaining count and BET decision
+}
+
+cc(10); cc('Q'); cc('K'); cc('K'); cc('A');
+console.log(cc(2)) 
+
+
+
+// 2nd METHOD NOTE This method TOO LONG and would not REC 
+
+var count = 0;
+
+
+function cc(card) {
+  // Only change code below this line
+if (card == 2 || card == 3 || card == 4 || card ==5 || card ==6) { //FIXME this can be condensed with (< or >)  
+   
+    function cc(card) {
+      // Only change code below this line
+    if (card == 2 || card == 3 || card == 4 || card ==5 || card ==6) {
+          //alert("2 3 4 5 6");
+        count += 1;
+      }
+      else if (card == 7 || card == 8 || card == 9) {  // This doesnt seem like it // FIXME this is NOT needed/ code will know NOT to ADD if NOT included within function
+          count += 0;
+      }
+      else if (card == 10 || card == "J" || card == "Q" || card == "K" || card == "A") {
+          count -= 1;
+      }
+      if (count <= 0) {
+          return String(count) + " Hold";
+      }
+      else {
+          return String(count) + " Bet";
+      }
+      // Only change code above this line
+    }
+    
+    cc(2); cc(3); cc(7); cc('K'); cc('A'); 
+    console.log(cc(2))
+
+var count = 0;
+
+
+
+function cc(card) {
+  // Only change code below this line
+if (card == 2 || card == 3 || card == 4 || card ==5 || card ==6) {
+  	//alert("2 3 4 5 6");
+    count += 1;
+  }
+  else if (card == 7 || card == 8 || card == 9) {  // This doesnt seem like it
+      count += 0;
+  }
+  else if (card == 10 || card == "J" || card == "Q" || card == "K" || card == "A") {
+      count -= 1;
+  }
+  if (count <= 0) {
+  	return String(count) + " Hold";
+  }
+  else {
+  	return String(count) + " Bet";
+  }
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A'); 
+console.log(cc(2)) with 
+  	//alert("2 3 4 5 6");
+    count += 1;
+  }
+  else if (card == 7 || card == 8 || card == 9) {  // This doesnt seem like it
+      count += 0;
+  }
+  else if (card == 10 || card == "J" || card == "Q" || card == "K" || card == "A") {
+      count -= 1;
+  }
+  if (count <= 0) {
+  	return String(count) + " Hold";
+  }
+  else {
+  	return String(count) + " Bet";
+  }
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A'); 
+console.log(cc(2))
 
