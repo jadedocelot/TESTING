@@ -1013,9 +1013,35 @@ function absTest(a, b) {
 
  /* END */
 
- <-- Counting c ards --> 
+ <-- Counting cards --> 
 
-// ANCHOR EDGAR METHOD 1
+
+
+//ANCHOR EDGAR METHOD 3
+
+function cc(card) { 
+    if (card == 2 || card < 6) {  // if card is 2 or less than 6 
+        count ++; // add 1
+
+    } else if (card == 10 || typeof card == "string") { // if card is 10 or a STRING ("J", "Q", "K", "A")
+      count --;   // Subtract 1
+
+    }
+
+        var holdbet = 'hold';
+            if (count > 0) {
+                holdbet = 'bet'
+            }
+
+            return count + " " + holdbet;
+
+    }
+
+cc(2); cc('q'); cc('k'); cc('k'); cc('k');
+console.log(cc(2))
+
+
+// NOTE EDGAR METHOD 2
 
 var count = 0; // Player  starts with 0 
 
@@ -1045,7 +1071,7 @@ cc(2); cc(2); cc(5); cc('K'); cc(2);
 console.log(cc())
 
 
-//ANCHOR EDGAR METHOD 2 
+//NOTE EDGAR METHOD 3
 var count = 0; // Player  starts with 0 
 
 function cc(card) {
@@ -1139,51 +1165,49 @@ if (card == 2 || card == 3 || card == 4 || card ==5 || card ==6) { //FIXME this 
     cc(2); cc(3); cc(7); cc('K'); cc('A'); 
     console.log(cc(2))
 
-var count = 0;
+   /* Building javascript arrays ANCHOR */
 
+    // Objects are similar to arrays, except of using an index to access and modify data
+        //One can think of an object as an associative array (a.k.a. map, dictionary, hash, lookup table
+    // You access the data in objects through what are called properties 
+    // in Javascript, an object is a standalone entity
+        /// A thing with distinct and independent existence
+//Objects are used for storing data in a structured way, and can represent real world objects, like a cat 
 
+var Edgar = {
+    "Sex": "male",
+    "Weight": 160,
+    "favorite food": "Pizza",
+    "dislikes": ["mondays ", "working for others", "not having money"],
+    "status": "single",
+   
+   } ; 
+   
+   console.log(typeof(Edgar)) // OUTPUT: OBJECT
 
-function cc(card) {
-  // Only change code below this line
-if (card == 2 || card == 3 || card == 4 || card ==5 || card ==6) {
-  	//alert("2 3 4 5 6");
-    count += 1;
-  }
-  else if (card == 7 || card == 8 || card == 9) {  // This doesnt seem like it
-      count += 0;
-  }
-  else if (card == 10 || card == "J" || card == "Q" || card == "K" || card == "A") {
-      count -= 1;
-  }
-  if (count <= 0) {
-  	return String(count) + " Hold";
-  }
-  else {
-  	return String(count) + " Bet";
-  }
-  // Only change code above this line
-}
+/* END */
 
-cc(2); cc(3); cc(7); cc('K'); cc('A'); 
-console.log(cc(2)) with 
-  	//alert("2 3 4 5 6");
-    count += 1;
-  }
-  else if (card == 7 || card == 8 || card == 9) {  // This doesnt seem like it
-      count += 0;
-  }
-  else if (card == 10 || card == "J" || card == "Q" || card == "K" || card == "A") {
-      count -= 1;
-  }
-  if (count <= 0) {
-  	return String(count) + " Hold";
-  }
-  else {
-  	return String(count) + " Bet";
-  }
-  // Only change code above this line
-}
+ /* Accessing object properties with dot notation ANCHOR  */
 
-cc(2); cc(3); cc(7); cc('K'); cc('A'); 
-console.log(cc(2))
+ // There are two ways to access the properties of an object
+   // DOT NOTATION  (.)
+        /// Dot notation is what you use when you know the the name of the property you're trying to access ahead of time
 
+   // BRACKET NOTATION ([]) -- similar to an array
+
+   var Edgar = {
+    "gender": "male", // String
+    "Weight": 160, // number
+    "favorite food": "Pizza", //string
+    "dislikes": ["mondays ", "working for others", "not having money"], //array
+    "status": "single", //string
+   
+   } ; 
+   
+   var contenderOne = Edgar.gender; // male
+   
+   var hates = Edgar.dislikes; // working for others, not having money, mondays
+   
+   
+   console.log(typeof(Edgar))
+   

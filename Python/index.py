@@ -207,4 +207,30 @@ print (s)
 #OUTPUT:
 This is a string. This continues the string
 
+<--- Indentation ANCHOR --->
+#Whitespace is IMPORTANT in python
+	## Whitespace at the beginning of a line is important, this is called INDENTATION
+#Statements which go together must have the same indentation, each such statements is called a block
+	#Wrong indentations can give errors 
+
+#UNACCEPTABLE indentations bellow:
+	i  = 5 
+
+	print('the value of the foot is', i)
+print('I repeat, the value of the foot is', i)
+# the the above syntax will print out an ERROR message telling you that an unexpected indent was included
+
+# CORRECT INDENTATION BELOW 
+i  = 5 
+
+print('the value of the foot is', i)
+print('I repeat, the value of the foot is', i)
+#OUTPUT:
+the value of the foot is 5
+I repeat, the value of the foot is 5
+
+#if need bem, use FOUR spaces. This is the official python recommendation
+
+
+
 

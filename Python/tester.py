@@ -1,5 +1,4 @@
-Danica = "This bitch is fucking annpoying sometimes"
+i  = 5 
 
-
-
-print(Danica)
+print('the value of the foot is', i)
+print('I repeat, the value of the foot is', i)
