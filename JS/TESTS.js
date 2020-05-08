@@ -1,40 +1,13 @@
-/*var Homes = { 
-california:" Los Angeles", oregon:"Portland", washington: "Vancouver" 
-};
+var oregonFriends = {
 
-var newHome;
-newHome = 'california';
-var foundation = Homes[newHome];
-
-console.log(foundation) // Los angeles */
-
-//Example 2
-
-
-var valObj = {
-	gotoComputer: "Mac"
+	friendOne: 'Traci',
+	friendTwo: 'Kevin',
+	friendThree: 'Allison'
 
 };
-function mainMachine(str) {
-	var important = "goto";
-	return important + str;
 
-}
-var whichComputer =  mainMachine("Computer");
-console.log(valObj[whichComputer]);
+oregonFriends.friendFour = 'Meg'; //friendFour property has been added to oregonFriend
 
-
-
-
-
-//Second Example
-
-var someObj = {
-  propName: "John"
-};
-function propPrefix(str) {
-  var s = "prop";
-  return s + str;
-}
-var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
-console.log(someObj[someProp]); // "John"
+console.log(oregonFriends)
+// output in dev console will be:
+//{ friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg" }

@@ -1231,7 +1231,7 @@ var Edgar = {
 
    /* END */
 
-   /* ANCHOR Accessing object properties with variables*/
+/* ANCHOR Accessing object properties with variables*/
 // bracket notation can also be used to look properties using variables    
 
 var Homes = { 
@@ -1247,7 +1247,6 @@ console.log(foundation) // Los angeles
 
 //Second Example
 
-
 var valObj = {
     gotoComputer: "Mac"
 
@@ -1261,5 +1260,42 @@ var whichComputer =  mainMachine("Computer"); // now stores "goto" from mainMach
 console.log(valObj[whichComputer]); /// OUTPUT: Mac 
 
 /* END */
+
+/* Updating object properties */
+// The object can be updated with dot(.) || brackets([])
+var coder = {
+    proLanguage: "Javascript", // OG Property
+    homeTown: "Los Angeles",
+    favoritFood: "Pizza",
+    hates: "Everything"
+};
+
+coder.proLanguage = "Python"; // updating proLanguage property in coder variable
+//Another method would be:
+coder['proLanguage'] = "Python";
+
+console.log(coder) 
+//OUTPUT: {proLanguage: "Python", homeTown: "Los Angeles", favoritFood: "Pizza", hatesL: "Everything"}
+
+/* END */ 
+
+
+/* Add new properties to a javascript object  ANCHOR D */
+// you can add a new property to a javascript property the same way you would modify it 
+
+var oregonFriends = {
+
+    friendOne: 'Traci',
+    friendTwo: 'Kevin',
+    friendThree: 'Allison'
+
+};
+
+oregonFriends.friendFour = 'Meg'; //friendFour property has been added to oregonFriend
+
+console.log(oregonFriends)
+// output in dev console will be:
+//{ friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg" }
+
 
 
