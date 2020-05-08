@@ -230,6 +230,58 @@ the value of the foot is 5
 I repeat, the value of the foot is 5
 
 #if need bem, use FOUR spaces. This is the official python recommendation
+<-- Operators and expressions ANCHOR -->
+# Most statements (logical lines) that you write will contain expressions.
+# Example of an expression:
+	 	2 + 4  # 2 (operand) + (operator) 4 (operand)
+		 < OPERATORS >
+#an expression can be broken down into operands and operators
+	## operators (+) are used to perform operations on variables and values - funtionality that do something and can be represented in symbols or special keywords
+		### operators do require data I E operands 
+#EXAMPLES of OPERATORS being used:
+# NOTE POWER of is ** 
+
+3 + 4
+# ADD
+4 * 3
+# MULTIPLY
+4 / 2 
+# DIVIDE 
+5 ** % 
+#Returns x to the power of y
+13 % 3 
+# Modulo (%) returns the remainder of the division
+
+2 << 2 ## OUTPUT: 8 
+#LEFT SHIFT (<<)
+	## Shifts the bits of the number to the left by the number of bits specified. (Each number is represented in memory by bits or binary digits i.e. 0 and 1)
+		#NOTE understanding how got 8
+		 # A << B 
+		 	# you will need to get the BINARY REPRESENTATION of A
+			 # - this can be done with 
+			 	>>> format(2, 'b')
+			# output: 10
+				#now remove the first 2 number from the front and add 2 zero to the back (cause B = 2)
+					# TODO REFER TO index.MD (working on this) 
+			
+# ANCHOR Right Shift (>>)
+11 >> 5
+#OUTPUT
+5
+#11 when represented in bits is 1011
+	 #> remember to RIGHT SHIFT by 1 digit - (remove the 1 on the right side)
+# which leaves us with 101
+#5 = 101 (binary rep)
+
+<-- Bit wise and (&) -->
+# Bitwise AND sets the bits in the result to 1 if both the corresponding bits in the two operands are 1.
+# 1 = TRUE 
+# 0 + FALSE 
+5 & 3 
+#output: 1
+#It will compare the binary reps of 5 & 3
+	
+	
 
 
 

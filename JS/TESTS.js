@@ -7,9 +7,7 @@ var Edgar = {
 
 } ; 
 
-var contenderOne = Edgar.gender; // male
+var contenderOne = Edgar["gender"]; // male
 
-var hates = Edgar.dislikes; // working for others, not having money, mondays
+var hates = Edgar["weight"]; // 160
 
-console.log(Edgar.dislikes)
-console.log(typeof(Edgar.dislikes))
