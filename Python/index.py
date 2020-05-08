@@ -280,6 +280,8 @@ I repeat, the value of the foot is 5
 5 & 3 
 #output: 1
 #It will compare the binary reps of 5 & 3
+
+
 	
 	
 

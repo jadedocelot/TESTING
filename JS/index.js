@@ -166,7 +166,7 @@ var myArray = ['String', 'Example', 4]; ///in order to set up an array VAR you m
 
     /// Belows example presents a "NESTED" array or alsom considered a MULTI DIMENSIONAL array
 
-    var nestArray = [["Nested", 23], ["Multi", 890];]
+    var nestArray = [["Nested", 23], ["Multi", 890];
 
 
 ///Resting arrays within other arrays 
@@ -1228,5 +1228,38 @@ var Edgar = {
    var contenderOne = Edgar["gender"]; // male
    
    var hates = Edgar["weight"]; // 160
-   
-   
+
+   /* END */
+
+   /* ANCHOR Accessing object properties with variables*/
+// bracket notation can also be used to look properties using variables    
+
+var Homes = { 
+california:" Los Angeles", oregon:"Portland", washington: "Vancouver" 
+};
+
+var newHome;
+newHome = 'california'; // which matches one of the objects stored in Homes(variable)
+var foundation = Homes[newHome]; // foundation now stores Homes variable, and we are using the newHome variable within the brackets to call upon the object within Homes that has the matching name
+
+
+console.log(foundation) // Los angeles 
+
+//Second Example
+
+
+var valObj = {
+    gotoComputer: "Mac"
+
+};
+function mainMachine(str) {. 
+    var important = "goto"; // var will be storing the prefix to object name stored in valObj
+    return important + str; // function will then return attached variable + STRING 
+
+}
+var whichComputer =  mainMachine("Computer"); // now stores "goto" from mainMachine as well as the string "Computer", that being said whichComputer  = gotoComputer
+console.log(valObj[whichComputer]); /// OUTPUT: Mac 
+
+/* END */
+
+
