@@ -1296,6 +1296,28 @@ oregonFriends.friendFour = 'Meg'; //friendFour property has been added to oregon
 console.log(oregonFriends)
 // output in dev console will be:
 //{ friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg" }
+/* END */
+
+
+/* Deleting properties from an object in Javascript  ANCHOR */
+// the property can be removed with teh deleted keyword 
+
+
+var oregonFriends = { // OG List
+
+    friendOne: 'Traci',
+    friendTwo: 'Kevin',
+    friendThree: 'Allison',
+    friendFour: 'Meg',
+    friendFive: 'Tommy'
+};
+
+delete oregonFriends.friendFive; //friendFive property will be deleted from oregonFriend object
+
+console.log(oregonFriends)
+//dev console output: Object { friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg", friendFive: "Tommy" }
+
+/*end*/
 
 
 

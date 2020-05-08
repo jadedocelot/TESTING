@@ -1,13 +1,13 @@
-var oregonFriends = {
+var oregonFriends = { // OG List
 
 	friendOne: 'Traci',
 	friendTwo: 'Kevin',
-	friendThree: 'Allison'
-
+	friendThree: 'Allison',
+	friendFour: 'Meg',
+	friendFive: 'Tommy'
 };
 
-oregonFriends.friendFour = 'Meg'; //friendFour property has been added to oregonFriend
+delete oregonFriends.friendFive; //friendFive property will be deleted from oregonFriend object
 
 console.log(oregonFriends)
-// output in dev console will be:
-//{ friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg" }
+//dev console output: Object { friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg", friendFive: "Tommy" }
