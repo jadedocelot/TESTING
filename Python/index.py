@@ -252,6 +252,8 @@ I repeat, the value of the foot is 5
 13 % 3 
 # Modulo (%) returns the remainder of the division
 
+	___	BINARY OPERATIONS __ 
+
 2 << 2 ## OUTPUT: 8 
 #LEFT SHIFT (<<)
 	## Shifts the bits of the number to the left by the number of bits specified. (Each number is represented in memory by bits or binary digits i.e. 0 and 1)
@@ -322,20 +324,48 @@ bigFive & 3
 
 <-- bit-wise OR --> 
 
+#bit-wise OR ( | )
+# take two bit patterns and performs the logical inclusive OR operation on each corrosponding bits.
+# The result in each position is 0 if both are zero, while otherwise the result is 1
+# https://en.wikipedia.org/wiki/Bitwise_operation#OR
+
+5 | 3 
+
+>>> 7
+
+<-- bit-wise XOR -->
+# bit-wise XOR (^)
+# takes two bit patterns of equal length and performs the LOGICAL EXCLUSIVE OR operation on each pair of corrosponding bits
+#The result in each position is 1 if only the first bit is 1 or only the second bit is 1, but will be 0 if both are 0 or both are 1. (Continue)
+#In this we perform the comparison of two bits, being 1 if the two bits are different, and 0 if they are the same
 
 
+#print(format(5,'b')) # 101
+#print(format(3,'b')) #11
 
 
+5 ^ 3
+>>> 6
+
+print(format(6, 'b'))
+>>> 110
+
+< -- bit wise invert -- >
+# The bit-wise inversion of x is -(x+1)
 
 
+~ 5
+
+>>> - 6
+
+~ 7 
+
+>>> -8
 
 
+~10101
+>>> 10102
 
-
-
-
-
-	
 	
 
 
