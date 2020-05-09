@@ -282,6 +282,59 @@ I repeat, the value of the foot is 5
 #It will compare the binary reps of 5 & 3
 
 
+| BIT REF CHART |
+
+INPUT 1	  |    INPUT 2	   |	  OUTPUT  
+
+  0		  |       0        |        0         # FALSE 
+
+  0       |       1        |        0		  # FALSE 
+
+  1       |       0        |        0		  # FALSE
+
+  1       |       1        |        1		  # TRUE 
+
+
+<-- Bit-wise AND -->
+#Bit-wise AND (&)
+#Bit wise AND of the number
+	## AND (&) compares the first bit of each opperand to the corresponding bit of the second operand 
+	## If both bits are 1 then the corresponding result bit is set to 1
+	## otherwise teh corresponding result bit is set to 0
+	## Both operands to the bitwise AND must be of intergral types I E  NUMBERS
+
+5 & 3 
+
+>>> 1
+
+	## 5 = 101 
+	## 3 = 11  
+
+
+# LIL side NOTE:
+	# using a variable to store a numeric value
+
+bigFive = 5
+
+bigFive & 3 
+
+>>> 1 
+
+<-- bit-wise OR --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 

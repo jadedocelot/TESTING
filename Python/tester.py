@@ -1,4 +1,3 @@
-print(5 & 3) 
+print(format(55, 'b'))
+print(format(3, 'b'))
 
-print(bool(5 & 3))
-     #TRUE
