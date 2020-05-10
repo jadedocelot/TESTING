@@ -10,16 +10,16 @@ body {
   position: absolute;
   width: 205px;
   height: 205px;
-  bottom: 53.7%;
-  left: 45.10%;
+  bottom: 61.7%;
+  left: 69.10%;
   z-index: 1;
   filter: grayscale(100%);
 }
 
 #fpTwo {
   position: absolute;
-  bottom: 49%;
-  left: 11%;
+  bottom: 52%;
+  left: 45%;
   width: 203px;
   height: 203px;
   filter: grayscale(100%);

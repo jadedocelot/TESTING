@@ -479,4 +479,17 @@ prin(y == x)
 >>> False 
 
 
+<-- Not equal to -->
+#Not equal to (!=)
+
+#it compars two numbers are not equal to
+# True is returned if y is not equal to x 
+x = 4 
+y = 9 
+
+x != y 
+>>> Trues 
+ 
+
+
 

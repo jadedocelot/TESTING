@@ -1,13 +1,19 @@
-var oregonFriends = { // OG List
+function dontDiscriminate(val) {
 
-	friendOne: 'Traci',
-	friendTwo: 'Kevin',
-	friendThree: 'Allison',
-	friendFour: 'Meg',
-	friendFive: 'Tommy'
-};
+EqualTo = "";
 
-delete oregonFriends.friendFive; //friendFive property will be deleted from oregonFriend object
+switch(val) {
+case 1:
+case 2:
+case 3:
+	EqualTo ="This worked";
 
-console.log(oregonFriends)
-//dev console output: Object { friendOne: "Traci", friendTwo: "Kevin", friendThree: "Allison", friendFour: "Meg", friendFive: "Tommy" }
+
+}
+
+return EqualTo
+
+}
+
+console.log(dontDiscriminate(2))
+console.log(dontDiscriminate(6))

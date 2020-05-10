@@ -23,7 +23,8 @@
 
 
 ## JS
-	- [] Look into REACT.JS 
+	- Look into Tabular data TODO 
+  - [] Look into REACT.JS 
 	
 
 

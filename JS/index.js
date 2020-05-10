@@ -836,7 +836,7 @@ console.log(golfScore(3, 7)); //Go Home!
 
 <-- using SWITCH STATEMENTS (in case you cant make up your mind) --> 
 
-    // A switch statement can come in hand when you have a number of options to choose from      
+    // A switch statement can come in handy when you have a number of options to choose from      
    // Switch statements tests a value and can have various possible values 
   // CASE values are tested with strict equality (===)
  // (if a VAR were to have many options) --- 
@@ -1319,6 +1319,10 @@ console.log(oregonFriends)
 
 /*end*/
 
+//Using objects for lookups ANCHOR
+//Objects can be thought of as key/value storage (Like say, a dictionary)
+//"Tabular data"
+// You can use an object t 'lookup' a value rather than use SWITCH 
 
 
 
