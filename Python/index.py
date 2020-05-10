@@ -366,6 +366,58 @@ print(format(6, 'b'))
 ~10101
 >>> 10102
 
+<-- Greater/less than ANCHOR -->
+
+# Greater than (>)
+# When the entered value is greater operand(NUMBER), TRUE is returnned 
+
+4 > 2
+>>> TRUE
+
+2 > 4
+>>> FALSE 
+
+# Less than (<)
+# Returns >>>True when the endered value is less than the stored operand(NUMBER)
+
+2 < 4
+>>>True
+
+4 < 2 
+>>>False
+
+##This was a fun one.
+
+###∆∆∆ A "bit" is a single binary digit. The number above has 6 bits. ∆∆∆∆
+
+print(0b11001 < 0b110010)
+>>> True 
+##This was a fun one.
+# 25 = 0b11001(Binary number
+# 50 = 0b110010(Binary number) 
+
+
+<-- less than or equal to -->
+#less than or equal to(<=)
+
+# Returns whether y is less than or equal to X 
+
+y = 2 
+x = 4
+
+
+y <= X 
+>>> True
+
+
+
+
+
+
+
+
+
+
 	
 
 

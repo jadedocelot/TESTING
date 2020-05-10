@@ -1,3 +1,5 @@
-aN = "Hello world! Another night!"
+x = 2
+y = 4
 
-print(aN)
+
+print(x '#' y)
