@@ -410,16 +410,73 @@ y <= X
 >>> True
 
 
+<-- greater than or equal to -->
+# greater than equal to (>=)
 
 
+# True is returned when y is greater or equal to y. Otherwise return will be FALSE
+x = 4
+y = y
+
+***********************
+\					  *
+ \					  *
+  \					  *
+ 	  \ 			  *
+   		 /			  *
+     \				  *
+      \				  *
+       \ 			  *
+        \			  *
+         \			  *
+         /			  * 
+        /			  *
+       /			  *
+      /****************
+     /  D
+    /	 Y
+   /	  N
+  /		   A
+ /		    M
+/			 I
+			  C
+			 Y
+			R
+		  O
+		M
+	  E
+	m
+  >
+ 
 
 
+x >= y
+>>>True 
+
+10 >= 5 
+>>> True  
 
 
+print(0b1001110 >= 0b100010)
+>>> True
 
+print(0b100010 >= 0b1001110)
+>>> False 
+#0b100010 = 34
+#0b1001110 = 78
 
-	
+<-- Equal to -->
+# Equal to (==)
+# it will compare if the objects are equal ("" == '') = True  
 
+x = 2
+y = 2 
+
+prin(y == x) 
+>>> True
+
+4 == 9
+>>> False 
 
 
 
