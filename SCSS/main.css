@@ -6,13 +6,22 @@ body {
   background-color: #1c1c1c;
 }
 
-#foldedProtein {
+#fpOne {
   position: absolute;
   width: 205px;
   height: 205px;
-  bottom: 58.6%;
+  bottom: 53.7%;
   left: 45.10%;
   z-index: 1;
+  filter: grayscale(100%);
+}
+
+#fpTwo {
+  position: absolute;
+  bottom: 49%;
+  left: 11%;
+  width: 203px;
+  height: 203px;
   filter: grayscale(100%);
 }
 
@@ -20,7 +29,7 @@ h1 {
   color: black;
   font-family: 'Raleway Dots', cursive;
   font-size: 54px;
-  font-weight: 10;
+  font-weight: lighter;
 }
 
 #code {
