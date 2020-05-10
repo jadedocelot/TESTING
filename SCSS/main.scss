@@ -9,9 +9,19 @@ body {
 
 }
 
+#foldedProtein { 
+  position: absolute;
+  width: 205px;
+  height: 205px;
+  bottom: 58.6%;
+  left: 45.10%;
+  z-index: 1;
+  filter: grayscale(100%)
+}
+
 
 h1{
-    color: 	black;
+    color: black;
     font-family: 'Raleway Dots', cursive;
     font-size: 54px;
     font-weight: 10;
@@ -29,7 +39,7 @@ h1{
   position: relative;
   width: 10px;
   height: 100px;
-  background: 	#141414;
+  background: 	black;
   right: -220px;
   top: -129px;
 }
