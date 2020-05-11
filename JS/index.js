@@ -1325,5 +1325,64 @@ console.log(oregonFriends)
 // You can use an object t 'lookup' a value rather than use SWITCH 
 
 
+//Rather than using SWITCH like so:
+
+function switchWho(val) { 
+    answer = "";
+
+switch(val) {
+
+    case "sun":
+    case "beach":
+    case "mexicans":
+    case "ho ho chicken":
+        answer = "california";
+    break;
+    case "green":
+    case "bike riding":
+    case "dates":
+    case "deep dish":
+        answer = "Portland";
+    break;
+    case 1:
+        answer = "NaN";
+
+ }
+
+ return answer;
+
+}
+
+console.log(switchWho('sun'))
+
+console.log(switchWho('green'))
+
+console.log(switchWho(1))
+}
+//// -----  Below OBJECTS 
+function whatsForDinner(val){
+	result = ""; //result will return  a string
+	
+	var dinnerOptions = { /// Our object using in place of a SWITCH/CASE 
+		//Keyvalue pairs listed below 
+		1:"Greek", //value 1 
+		2:"Itallian", //value 2
+		3:"Indian", // value 3
+		4:"Mexican" //value 4  
+		
+	};
+	var value = val; // var for (whatForDinner) function
+		result = dinnerOptions[value];
+
+		return result;
+	}
+
+		console.log(whatsForDinner(1))
+
+
+/* END */
+
+/* Testing objects for properties ANCHOR */
+
 
 

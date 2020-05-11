@@ -1,43 +1,23 @@
-/* function phoneticLookup(val) {
-	var result = "";
-  
-	  var lookup = {
-	  	"alpha":"Adams",
-	  	"bravo":"Boston",
-	  	"charlie":"Chicago",
-	  	"delta":"Denver",
-	  	"echo": "Easy",
-	  	"foxtrot": "Frank",
-	};
-	  var value = val;
-	  result = lookup[value];
-  
-	return result;
-  }
+ function myBall(vall) {
 
-  console.log(phoneticLookup("delta")) // Denver */
+ result = "";
 
+var objBall = {
 
-  function whatsForDinner(val){
-	result = ""; //result will return  a string
-	
-	var dinnerOptions = { /// Our object using in place of a SWITCH/CASE 
-		//Keyvalue pairs listed below 
-		1:"Greek", //value 1 
-		2:"Itallian", //value 2
-		3:"Indian", // value 3
-		4:"Mexican" //value 4  
+	shape: "Round",
+	color: "Blue/Yelow",
+	weight: "Light"
 
-
+ }; 
  
-		
-	};
+ var value  = val;
+ 	result = objBall[value];
 
-	var value = val; // var for (whatForDinner) function
-		result = dinnerOptions[value];
+ 	return result;
 
+ } 
 
-		return result;
-	}
+myBall.hasOwnProperty("shape");
+myBall.hasOwnProperty("color");
+myBall.hasOwnProperty("weight");
 
-		console.log(whatsForDinner(1))
