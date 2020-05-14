@@ -488,8 +488,64 @@ x = 4
 y = 9 
 
 x != y 
->>> True 
+>>> True
+
+4 != 4 
+>>> False 
+
+<-- Boolean NOT --> 
+
+#Using  (not) before a boolean will OUTPUT the oposite value
+
+x = True; 
+>>>
+not x
+>>> False
+
+
+<-- boolean (and) --> 
+
+x = False; 
+y = True; 
+
+x and y
+>>> False
+#
+# In this case Python will not evaluate Y since the left hand of AND expression is false, which implies the whole expression is FALSE
+# It will return false even though Y is True 
+# Only if the fist value is is TRUE, it checks the second statement and returns the value
+
+NOTE: 
+
+
+# This is called short-circuit evaluation
  
+ #SHORT CIRCUIT
+	## - short circutit operators consist of (boolean AND, Boolean OR, and boolean NOT 
+
+	## - Short-Ciruit referes to stopping the execution of a booleans if the truth value of the expression has been determined already
+	## An expression containing an AND and OR stops the truth value of expression that has been achieved 
+
+
+	<-- boolean (OR) -->
+#if X is True, it returns True (even if if Y is False 
+
+x = False; 
+y = True; 
+
+print(x or y)  
+>>>True
+
+print(y or x)
+>>>True 
+
+
+
+
+
+
+
+
 
 
 

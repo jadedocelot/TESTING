@@ -1,23 +1,2 @@
- function myBall(vall) {
-
- result = "";
-
-var objBall = {
-
-	shape: "Round",
-	color: "Blue/Yelow",
-	weight: "Light"
-
- }; 
- 
- var value  = val;
- 	result = objBall[value];
-
- 	return result;
-
- } 
-
-myBall.hasOwnProperty("shape");
-myBall.hasOwnProperty("color");
-myBall.hasOwnProperty("weight");
-
+//A JS object one way to handle flexable data  
+//They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects

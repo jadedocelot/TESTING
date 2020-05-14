@@ -1384,5 +1384,67 @@ function whatsForDinner(val){
 
 /* Testing objects for properties ANCHOR */
 
+var obj = { 
+    "gift": "pony",
+    "pet": "kitten",
+    "bed": "sleigh"
+  };
+
+function checkObj(obj, checkProp) {
+
+if(obj.hasOwnProperty(checkProp)) {
+  return obj[checkProp];
+} else {
+  return "Not Found";
+}
+}
+
+console.log(obj.hasOwnProperty("bed")) // True
+console.log(obj.hasOwnProperty("tuna")) // False 
+
+/// Another method
+
+var obj = {  //Object
+    "gift": "pony", //Property 
+    "pet": "kitten", //Property 
+    "bed": "sleigh" //Propety
+  };
+
+console.log(obj.hasOwnProperty("bed")) //.hasOwnProperty verifies whether prpoerty is True or False("active" or not "acitve ")
+//OUTPUT: True 
+console.log(obj.hasOwnProperty("tuna"))
+//OUTPUTL: False 
+
+console.log("pet" in obj)
+/// OUTPUT: False 
+
+///METHOD 3 TODO 
+
+// Setup
+var myObj = {
+	gift: "pony",
+	pet: "kitten",
+	bed: "sleigh"
+	};
+	
+	function checkObj(checkProp) {
+	// Your Code Here
+	if(myObj.hasOwnProperty(checkProp)){
+	return myObj[checkProp];
+	}
+	else if(myObj.hasOwnProperty(checkProp) !== true){
+	return "not found";
+	}
+	else{
+	return "change me";
+	}
+	}
+	
+	// Test your code by modifying these values
 
 
+
+
+
+
+<-- -->

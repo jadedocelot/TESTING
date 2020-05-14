@@ -23,6 +23,7 @@
 
 
 ## JS
+  - TODO .hasOwnProperty
 	- Look into Tabular data TODO 
   - [] Look into REACT.JS 
 	
