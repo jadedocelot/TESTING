@@ -1,4 +1,6 @@
-myLife = "I hack for fun!"
+def myFunc(n):
+     return lambda a: a * n
 
+bangBang = myFunc(2)
 
-print(myLife)
+print(bangBang(11)) 

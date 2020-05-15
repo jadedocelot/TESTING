@@ -1448,6 +1448,8 @@ var myObj = {
 
  //A JS object one way to handle flexable data  
 //They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects
+// This is an array that contains 2 onjects inside, the objects have various pieces of METADATA about 1 human and 1 dog
+// each object has nested "FORMAT" arrays
 var californiaHouseHold = [
 	{
 		"Adult": "Edgar",

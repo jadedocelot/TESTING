@@ -537,11 +537,88 @@ print(x or y)
 >>>True
 
 print(y or x)
->>>True 
+>>>True
+
+<-- SHORTCUT FOR MATH OPERTATION AND ASSIGNMENTS -->
+
+# You can run a math opertation on a variable and then assign the result of the operation back to the variable
+
+a = 5 
+
+a = a * 5 
+
+a 
+>>> 25 
+
+___________________________
+
+OR 
 
 
+a = 5 
+
+a *=2
+
+a 
+>>> 10 
+# Notice that Var = Var operation expression --> Var Operation= Expression
 
 
+___________________________
+
+<-- evaluation Operators --> 
+
+# The following table gives us the precedence table for Python
+	# from the lowest precedence (least binding) to the highest precendence (MOST binding)
+	# Python in this case  will first evalutate the operators and expressions lower in the table before the ones listed  higher in the tabkle
+	# it is far  better to use parentheses to group operators and operands appropriately in order to explicitly specify the precence
+				#This makes the program more readable
+
+lambda
+	# Lambda Expression
+	 # The Lambda expression is small anonymous epxression 
+	   # it can take any number of arguments, but can only have one expressions
+
+x = lambda a,b,c: a + b + -c
+
+print(x(1,1,1))
+>>> 1 
+
+___
+or
+___
+
+
+x = lambda a: a * 3
+
+print(x(5))
+>>>15 
+
+# The power of Lambda is better shown when you use it at an anonymous function inside another function
+
+def myFunc(n):
+     return lambda a: a * n
+
+bangBang = myFunc(2) #2 is now assigned to a
+
+print(bangBang(11))
+>>> 22 
+# 11 is now assigned to n and will now perform the following
+# 11 * 2  
+
+
+___
+or
+___
+# Use the same function definition that makes a function that always triples the number you send in
+
+def myFunc(n)
+	return lambda a: a * n 
+
+bangBang = myFunc(3)
+
+print(bangBang(11))
+>>> 33
 
 
 
