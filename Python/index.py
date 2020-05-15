@@ -620,6 +620,51 @@ bangBang = myFunc(3)
 print(bangBang(11))
 >>> 33
 
+___
+or
+___
+
+def myFunc(n):
+     return lambda a: a * n
+
+bangBang = myFunc(2) #2 is now assigned to a
+bangBangBang = myFunc(3)
+
+print(bangBang(11))
+>>>22
+
+print(bangBangBang(11))
+>>>33 
+
+<-- if/else -->
+
+# The following conditions can be used in IF statements
+
+e == b 
+# Equals 
+
+e != b 
+#Not equals
+
+e < b
+# Less than
+
+e > b 
+# Greater than 
+
+e >=
+# Greater than or equal to 
+
+
+If 
+
+x = 200
+y = 300
+
+if y > x: 
+	print("That number is much larger")
+
+>>> That number is much larger
 
 
 

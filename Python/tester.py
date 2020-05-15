@@ -1,6 +1,7 @@
-def myFunc(n):
-     return lambda a: a * n
+x = 23
+b = 345
 
-bangBang = myFunc(2)
-
-print(bangBang(11)) 
+if b > x:
+     print("Yeah that's way big.")
+elif b < x:
+     print("uh yeah no...")
