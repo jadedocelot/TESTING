@@ -636,7 +636,7 @@ print(bangBang(11))
 print(bangBangBang(11))
 >>>33 
 
-<-- if/else -->
+<-- if/else ANCHOR -->
 
 # The following conditions can be used in IF statements
 
@@ -662,9 +662,13 @@ x = 200
 y = 300
 
 if y > x: 
-	print("That number is much larger")
+	print("Y is larger than X")
 
->>> That number is much larger
+>>> That number is much larger 
+
+
+
+
 
 
 
