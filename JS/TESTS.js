@@ -1,37 +1,25 @@
-
-//A JS object one way to handle flexable data  
-//They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects
-
-var californiaHouseHold = [
-	{
-		"Adult": "Edgar",
-		"height": "FiveFeet",
-		"HairColor": "brown", 
-		"Clothes": [ 
-			"shirt",
-			"shorts",
-			"headphones",
-			"beanie",
-		],
-
-		"Alive": true
-	}, 
-
-	{
-		"dog": "otto",
-		"breed": "snauzer",
-		"color": "black",
-		"fave_snacks": [
-			"chicken",
-			"pizza",
-			"mondays"
-		],
-
-			"Alive": true
+var myComputers = [   //OBJECT
+ {
+	computer: "Laptop",
+		list:[
+	 	"MacOS",
+	 	"Catalina",
+	 	"16 GIGS",
+	 	"500gig HDD"]
+	},
 	
+	{
+	computer:"Laptop",
+		list:[
+		 "Linux",
+		 "Mint",
+		 "250 GIGS",
+		 "2 GIGS"]
 	}
-]; 
 
 
+ ];
 
-console.log("Pet 1:" + JSON.stringify(californiaHouseHold[1]))/
+// the example below is assigning a variable to a nested array within an object
+var favoriteOS = myComputers[0].list[0]; 
+// favoriteoOS = MacOS 
