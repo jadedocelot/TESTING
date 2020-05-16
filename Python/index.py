@@ -668,6 +668,10 @@ if y > x:
 
 
 
+<<-- elif -->
+# Elif keyword in Python is a way of saying "if the previous condition were true, then try this condition "
+
+
 
 
 
