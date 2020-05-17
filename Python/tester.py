@@ -1,7 +1,5 @@
-x = 13
-b = 345
+a = 70
+b = 50
 
-if b > x:
-     print("Yeah that's way big.")
-elif b < x:
-     print("uh yeah no...")
+
+if a > b:print("a is greter than b")

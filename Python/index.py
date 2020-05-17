@@ -671,6 +671,38 @@ if y > x:
 <<-- elif -->
 # Elif keyword in Python is a way of saying "if the previous condition were true, then try this condition "
 
+x = 13
+b = 345
+
+if b > x: #1: if vale is this
+     print("Yeah that's way big.") # 1: OUTPUT
+elif b < x: #2: else if print this
+     print("uh yeah no...") #2: OUTPUT
+
+_____
+OR___
+_____
+
+a = 243 
+b = 500
+c = 124
+
+if a > b:
+     print("b is greater than a")
+elif a == b:
+     print("a and b are equal")
+else: 
+     print("b is greater and that's that")
+     #This will print out since a is neither greater than or equal 
+
+/* SHORT HAND */
+# this iwill come in handy when you have only one statement to execute, you can put it on the same line as the statement
+
+if 
+
+
+
+
 
 
 
