@@ -724,6 +724,10 @@ if a > b and c > a:
 >>> Both conditions are true
 
 
+#Below is a one line statement which consists of 3 CONDITIONS
+
+
+
 
 
 
