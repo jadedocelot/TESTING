@@ -49,8 +49,44 @@
 
 # What is postgreSQL
   - Advanced open source relational database
-  - Another example of a database system that isnt open source (NOT FREE) is Oracle 
+  - Another example of a database system that isnt open source (NOT FREE) is Oracle, MySQL, SQLserver 
    - PostgreSQL is an object relational databasse management system
+# GUI Clients vs terminal/CMD Clients
+
+- Remember that the server is running on the computer postregeSQL is installed in 
+  **Basically your computer is acting as a database server ((REMBER THAT ANYONE CAN CONNECT TO IT))
+ 
+#Methods to accessing your database 
+   - In order to connext  to data base is with a GUI client
+      * this is an application that eases the way that you connect to the database
+  
+   - The second way to access your database  is throught the terminal/CMD line 
+    <COMMAND LINE WILL BE THE WAY WE LEARN TO DO THIS> 
+
+# Some GUI clients that can be used 
+1. Data Grip
+2. Postico
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
