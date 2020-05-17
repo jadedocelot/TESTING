@@ -1,4 +1,6 @@
-a = 70
-b = 50
+a = 300
+b = 230
+c = 700
 
-print("a is greater than b") if a > b else print("aint got shit shit on b")
+if a > b and c > a:
+     print("Both conditions are true")

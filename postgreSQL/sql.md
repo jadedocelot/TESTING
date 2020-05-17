@@ -47,7 +47,10 @@
        the info within that car_id is linked to a CAR TABLE which is a seperate data table
         * Again, this is a relational database
 
-
+# What is postgreSQL
+  - Advanced open source relational database
+  - Another example of a database system that isnt open source (NOT FREE) is Oracle 
+   - PostgreSQL is an object relational databasse management system
 
 
 

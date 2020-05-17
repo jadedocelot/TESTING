@@ -698,7 +698,31 @@ else:
 /* SHORT HAND */
 # this iwill come in handy when you have only one statement to execute, you can put it on the same line as the statement
 
-if 
+a = 70
+b = 50
+
+
+if a > b:print("a is greter than b")
+
+# Short hand example of an if and else statement
+
+a = 24
+b = 50
+
+print("a is greater than b") if a > b else print("a-int got shit shit on b")
+>>> a-int got shit shit on b
+
+# And keyword 
+## the and keyword is a logical operator, and is used to combine conditional statements
+
+a = 300
+b = 230
+c = 700
+
+if a > b and c > a:
+     print("Both conditions are true")
+>>> Both conditions are true
+
 
 
 
