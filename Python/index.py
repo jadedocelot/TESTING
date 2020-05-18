@@ -716,7 +716,7 @@ print("a is greater than b") if a > b else print("a-int got shit shit on b")
 ## the and keyword is a logical operator, and is used to combine conditional statements
 
 a = 300
-b = 230
+b = 1000
 c = 700
 
 if a > b and c > a:
@@ -724,7 +724,57 @@ if a > b and c > a:
 >>> Both conditions are true
 
 
-#Below is a one line statement which consists of 3 CONDITIONS
+#Below is a one line statement which consists of 3 CONDITIONS ANCHOR
+
+a = 300
+b = 300
+
+print("a is greter than b") if a > b else print("a and b are equal") if a < b else print("A-int got shit on B")
+>>> a and b are equal
+
+
+or 
+
+a = 100
+b = 300
+
+print("a is greter than b") if a > b else print("a and b are equal") if a < b else print("A-int got shit on B")
+>>> A-int got shit on B
+		
+
+<-- Or keyword --> 
+
+a = 200
+b = 140
+c = 500
+
+if a > b or a > c:
+     print("at least one condition is greater")
+
+
+<-- Nested if -->
+
+# In python you can place an IF statement within an IF statement, this is called a nested if statement 
+
+x = 12
+
+if x > 15: 
+     print("x is greater than 15")
+if x > 35:
+     print("x is also greater than 35")
+else:
+     print("But it's not greater than 50")
+
+
+<-- PASS statement ANCHOR -->
+# if statements cannot be empty 
+
+a = 35 
+b = 200
+
+if b > a: 
+	pass 		
+
 
 
 

@@ -1,6 +1,7 @@
-a = 300
-b = 230
-c = 700
+a = 200
+b = 200
 
-if a > b and c > a:
-     print("Both conditions are true")
+if b > a: 
+     pass
+if a == b:
+     print("There are no equals in this town")
