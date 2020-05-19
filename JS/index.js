@@ -1513,4 +1513,49 @@ var backUp = chromeBackPack.frontPocket.pocketOne["spare laptop"]; // backUp = L
 
 <-- Accessing Nested Arrays -->
 
+//Array bracket notation can be chained to access nested arrays 
+
+var myMachines = [
+    { 
+        type: "Linux",  /// 0
+        list: [
+            "Kali Linux",
+            "Debian",
+            "120 gig HD",
+            "Gatewat Netbook",
+            "1 gig RAM",
+            "Laptop",
+            "Vim"
+        ]
+    }, 
+        {
+          type: "MacOS" ,   // 1 
+          list: [
+            "Catalina",
+            "16 gig RAM",
+            "Apple",
+            "500 gig HD",
+            "Laptop",
+            "VS Code"
+          ]
+    }, 
+        {
+            type: "Windows_10",  /// 2
+            list: [
+                "Windows",
+                "1 TB HD",
+                "16 gigs RAM",
+                "Desktop",
+                "VS Code"
+        ]
+    }
+
+];
+
+var currentOs = myMachines[1].list[0]; // Catatlina is currently stored within currentOs 
+
+/* END */
+
+// JS record collection ANCHOR 
+
 
