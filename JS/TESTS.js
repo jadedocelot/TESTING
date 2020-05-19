@@ -29,14 +29,14 @@ var topFourCopy = JSON.parse(JSON.stringify(topFour)); // makes a copy of the ob
 function updateTopFour(id, prop, value) { // This function will ADD or UPDATE object topFour
     if (value === "") { //// if the value is blank then delete the ID and PROPERTY 
         delete topFour[id][prop];//____|
-    } else if (prop === "tracks") { 
+  } else if (prop === "tracks") { 
         topFour [id][prop] = topFour[id][prop] || [];
         topFour [id][prop].push(value);
-    } else { 
+  } else { 
         topFour[id][prop] = value;
-    }
+  }
 
-    return topFour;
+   return topFour;
 
 }
 
@@ -50,6 +50,5 @@ updateTopFour(3003, "tracks", "Spring")
 updateTopFour(3003, "tracks", "Intern")
 updateTopFour(3003, "tracks", "California")
 
-
 ///TESTER 
-/* updateTopFour(3003, "artist", "AO") */ /// This will replace the value within the "artist property" with AO - this change will be applied to ID 3003
+updateTopFour(3003, "artist", "AO")/// This will replace the value within the "artist property" with AO - this change will be applied to ID 3003

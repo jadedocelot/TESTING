@@ -45,7 +45,7 @@
 - A RELATIONAL DATABASE is a relation between 1 or more tables
      * for example looking at the "car_id" column, notice how Edgar and Monica have a car and Noah doesnt. 
        the info within that car_id is linked to a CAR TABLE which is a seperate data table
-        * Again, this is a relational database
+        * Again, this is a relational database (Look into FLASK)
 
 # What is postgreSQL
   - Advanced open source relational database

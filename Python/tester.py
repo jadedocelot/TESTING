@@ -1,14 +1,5 @@
-a = 5
-b = 10
-c = 25 
+a = ("Noah","Monica","Maria","Edgar","Lucas","Luis")
+x = slice(5)
 
-if b > c and a < c:
-     print("Both statements are true")
-else:
-     print("At least one statement is true")
+print(a[x])
 
-
-if a > b or a > c:
-     print("At least one statement is true")
-else:
-     print("Neither statement is true") 

@@ -531,7 +531,7 @@ NOTE:
 #if X is True, it returns True (even if if Y is False 
 
 x = False; 
-y = True; 
+y = True;`
 
 print(x or y)  
 >>>True
@@ -779,6 +779,42 @@ c = 500
 if b > a: 
 	pass
 if c > 20
+
+
+#Messing with if and AND statements
+
+a = 5
+b = 10
+c = 25 
+
+if b > c and a < c:
+     print("Both statements are true")
+else:
+     print("At least one statement is true")
+
+
+if a > b or a > c:
+     print("At least one statement is true")
+else:
+     print("Neither statement is true") 
+#slice()
+# SLICE statement -- ANCHOR
+# function returns a slice of the object, it specifies how to slice a SEQUENCE 
+
+
+a = ("Noah","Monica","Maria","Edgar","Lucas","Luis")
+x = slice(5)
+
+print(a[x])
+>>>("Noah","Monica","Maria","Edgar","Lucas") 
+
+# Creating tuple and slice object
+# Choose a specific position where to start and 
+
+a = ("Noah","Monica","Maria","Edgar","Lucas","Brooklyn","Allisandra")
+x = slice()
+
+
 
 
 
