@@ -752,6 +752,9 @@ if a > b or a > c:
      print("at least one condition is greater")
 
 
+#Also, the or key will define a statemet is true as long as the condition the the left (OR right?) is true    
+
+
 <-- Nested if -->
 
 # In python you can place an IF statement within an IF statement, this is called a nested if statement 
@@ -771,9 +774,11 @@ else:
 
 a = 35 
 b = 200
+c = 500
 
 if b > a: 
-	pass 		
+	pass
+if c > 20
 
 
 
