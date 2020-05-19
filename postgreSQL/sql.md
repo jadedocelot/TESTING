@@ -67,7 +67,15 @@
 1. Data Grip
 2. Postico
 
+# Accessing a PorstgreSQL database in ITERM
 
+  - A number of commands start with (\) 
+  - Some command examples: 
+   1. \?: will present you with a list of commands that can be used within your database
+      * q: to quit HELP index     
+   2. \ connect {database name}: will take you to requested database
+   3. \list: will print out a list of your databases 
+   4. create database {database name}: will create a new database
 
 
 
