@@ -1,5 +1,4 @@
-a = ("Noah","Monica","Maria","Edgar","Lucas","Luis")
-x = slice(5)
+a = ("Noah","Monica","Maria","Edgar","Lucas","Brooklyn","Allisandra")
+x = slice(3,5)
 
 print(a[x])
-

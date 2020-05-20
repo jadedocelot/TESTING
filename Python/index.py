@@ -812,8 +812,10 @@ print(a[x])
 # Choose a specific position where to start and 
 
 a = ("Noah","Monica","Maria","Edgar","Lucas","Brooklyn","Allisandra")
-x = slice()
+x = slice(3,5)
 
+print(a[x])
+>>("Edgar","Lucas") 
 
 
 

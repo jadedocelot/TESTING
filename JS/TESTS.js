@@ -21,7 +21,6 @@ var topFour = {
         album: "PREfection",
 
     }
-
 };
 
 var topFourCopy = JSON.parse(JSON.stringify(topFour)); // makes a copy of the object before being updated
