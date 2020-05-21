@@ -1560,7 +1560,7 @@ var currentOs = myMachines[1].list[0]; // Catatlina is currently stored within c
 
 var topFour = { 
     3001: {
-        album: "Paper Castles", 
+        album: "", 
         artist: "Alice Phoebe Lou", 
         tracks: ["Little Spark", "Nostalgia", "Galaxies"]
     }, 
@@ -1583,7 +1583,9 @@ var topFour = {
     }
 };
 
-var topFourCopy = JSON.parse(JSON.stringify(topFour)); // makes a copy of the object before being updated
+var topFourCopy = JSON.parse(JSON.stringify(topFour));
+// makes a copy of the object before being updated
+
 
 function updateTopFour(id, prop, value) { // This function will ADD or UPDATE object topFour
     if (value === "") { //// if the value is blank then delete the ID and PROPERTY 
@@ -1611,3 +1613,56 @@ updateTopFour(3003, "tracks", "California")
 
 ///TESTER 
 updateTopFour(3003, "artist", "AO")/// This will replace the value within the "artist property" with AO - this change will be applied to ID 3003
+
+
+/*END*/
+
+//Iterate with javascript while loops ANCHOR //
+// Fun fact, you can run the same code multiple times by using loop 
+// The first type of loop being introduced is (while)
+// Becuase  it runs "while" a specified condition is TRUE and stops once that condition is no longer true 
+        //REMINDER: TRUE = ON & FALSE = OFF 
+
+        ///Example Below:
+        var myArray = [];
+        var i = 0;
+        while (i < 5) { //WHILE loop will execute 5 times and append the numbers 0 through 4 to myArray
+            myArray.push(i);
+            i++;
+        }
+    
+
+        //FUN POINTLESS TIP, the following will crash the site
+        var ourArray = [];
+        var i = 5;
+        while(i > 0) { /// infinite loop (SO COOL!) 
+          ourArray.push(i);
+          i++;
+        }
+
+
+//in the example below we are attemping to add the numbers 5 through 0 in decending order to myArray using while loop
+
+     var ourArray = [];
+        var i = 0;
+        while(i < 6) {
+     ourArray.unshift(i); // .unshift will reverse the count
+        i++; // This will make sure the loop eventually ends, this increments i
+     }
+
+     console.log(ourArray) // CONSOLE DEV OUTPUT: 5,4,3,2,1,0
+
+     /* another example*/
+
+var ourArray = [];
+var i = 5;
+    while(i >= 0) {
+    ourArray.push(i);
+    i--;
+    } 
+
+/*END*/ 
+
+
+/* Iterate with JS for loops ANCHOR */
+// You can run the same code multiple times by using a loop
