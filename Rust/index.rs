@@ -78,6 +78,43 @@ main main.rs
     // And building those libraries
 
     // Though the simple 'Hello world!' program we just built doesnt have any dependencies
-        // So right now you'd only be using the part of the Cargo that can take care of building your code
+        // So right now you'd only be using the part of the Cargo that can take care of building your cod
+
+// Rust comes installed with Rust itself 
+    // Current cargo version: 1.43.0
+
+/* CREATING A PROJECT WITH CARGO! ANCHOR */
+// Within the terminal, enter in the following: 
+$ cargo new hello_cargo --bin   
+$ cd hello_cargo
+
+//We passed the --b argument to cargo new because our goal is to make an executable aplication, as opposed to a library
+    // NOTE that --b creates a binary file (NOT a text file)
+    // Binary files contain sequences of bytes, which, means the binary digits(bits)
+
+// once the user moves forward into the hello_cargo dir, they will find 2 files 
+    //Cargo.toml
+    //src directory
+// NOTE that a git repo has been initialized within the hello_cargo dir
+
+//Proceed to opening Cargo.toml in VS CODE, toml will look like this: 
+
+Filename: Cargo.toml
+  $ cargo new hello_cargo --bin $ cd hello_cargo
+19
+ 
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+[dependencies]
+
+
+// This file is a TOML: (Tom's obvious, minimal language) format    
+// TOML is similar to INI but has some extra goodies and is used as Cargos configuration format
+
+
+
+
 
 
