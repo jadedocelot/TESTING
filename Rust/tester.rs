@@ -1,3 +1,3 @@
 fn main() {
-    println!("This is my first line in Rust, very, very, very exciting!");
+    println!("Today is Wed May 21st, and this is Rust!")
 }

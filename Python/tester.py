@@ -1,4 +1,7 @@
-a = ("Noah","Monica","Maria","Edgar","Lucas","Brooklyn","Allisandra")
-x = slice(3,5)
+length = 5
+breadth = 2
 
-print(a[x])
+area = length * breadth
+
+print 'area is', area 
+print 'perimeter is', 2 * (length + breadth)

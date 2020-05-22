@@ -818,6 +818,102 @@ print(a[x])
 >>("Edgar","Lucas") 
 
 
+# NOTE Changin the order of the evaluation
+
+# in python to make the expression more readable, one would push to using paratheses. Like so:
+2 +(3 * 4)
+>>>14
+
+# This would be much easier to read as oppose to this:
+
+#NO BUENO!
+2 + 3 * 4 #This would actually be easier to understand with knowledge of "operator precedences"?
+
+>>> 14 
+
+# Parantheses should be used reasonbly (Don't overdo it!)
+# And should not be redundant! Like so: 
+
+(2 +(3 * 4))
+>>> DONT DO THIS SHIT!
+
+# There are additional advantages of using paranthese
+# It can help change the evaluation.
+
+# If you want to addition to be evaluated before multiplication in an expression, you would go about it like so: 
+
+(2 + 3) * 3 
+>>> 20 
+
+# NOTE Associtivity
+
+# Operators are usually associated from left to right
+# When two operators have the same precedence, associativity helps determine the order of operation
+    # Associativity is the order in which an expression is evalutated, the has multiple operators
+    # Almost all operators have left to right associativity
+
+#Left-right associativity
+print(5*2//3)
+ >>> 3 
+
+#SHOWS left-right associativity
+print(5*(2//3))
+>>> 0
+
+# NOTE (**) = to the power, example:
+2 ** 5 = 5*5*5*5*5 
+#Also starts with the largest number?
+
+#Shows the right-left associativity of **
+print(2**3**2)
+#Output: 512, since 2**(3**2) = 2**9 
+
+#if 2 needs to be exponated first, your bitch ass needs to use()
+print((2 ** 3) ** 2) 
+>>> 64 
+
+#Please refer to the link for an operators table for an understanding of order or refer to 
+    # to a BYTE OF PYTHON (Page: 53) 
+https://docs.python.org/3.2/reference/lexical_analysis.html#operators
+
+# Some operators like assignment operators have the right-left associativity i.e 
+a = b = c 
+# Is treated as
+a = (b = c) 
+
+# NOTE EXPRESSIONS
+
+length = 5
+breadth = 2
+
+area = length * breadth
+
+print 'area is', area 
+print 'perimeter is', 2 * (length + breadth)
+
+>>> area is 10
+>>> perimeter is 14 
+
+#ANCHOR The length and breadth of the rectangle are stored in variables by the same name
+# Then they are used to calculate the area of the perimeter of the rectangle with the help of EXPRESSIONS
+	# The result of the expression length * breadth in the VAR area then use it in the print function 
+	# In the second, we directly use the value of the expression 	2 * (length + breadth) in the print statement
+
+#Also notice how Python "pretty prints"
+	# Even though we have not specified a space between 'area is' and the variable AREA, Python puts it in for us
+	# We don't need to worry about spacing in the strings we use in output 
+
+#ANCHOR CHAPTER 7
+## CONTROL FLOW!!!
+
+
+
+
+
+
+
+
+
 
 
 

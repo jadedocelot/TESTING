@@ -70,5 +70,14 @@ main main.rs
 
 //Hello, Cargo! NOTE
 
+// CARGO is Rust's buid system and package manager
+// Rustaceans use Cargo to manage their Rust projects because it makes a lot of tasks easier
+    //CARGO:
+    // Takes care of building your code 
+    // Downloading the libraries your code depends on
+    // And building those libraries
+
+    // Though the simple 'Hello world!' program we just built doesnt have any dependencies
+        // So right now you'd only be using the part of the Cargo that can take care of building your code
 
 
