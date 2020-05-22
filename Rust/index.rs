@@ -11,12 +11,12 @@ fn main() {
 // Go back to your terminal and enter in the following: 
 $ rustc main.rs 
 
-// This will then proceed to save a terminal file
+// This will then compile your Rust file and output a binary excutable
 // now enter the following into your terminal
 $ ./main
 //OUTPUT: Hello world!
 
-// Anatomy of a Rust program
+// NOTE Anatomy of a Rust program
 
 fn main() { //the empty parantheses indicates NO PARAMETERS 
 
@@ -63,9 +63,12 @@ println!
     // file. Like so: 
     $ rustc main.rs
 
+// After compiling successfully, Rust should 
+// Once this is done, do the following to see what you are now working with:
+$ ls 
+main main.rs
 
-
-
+//Hello, Cargo! NOTE
 
 
 
