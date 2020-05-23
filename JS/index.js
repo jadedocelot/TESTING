@@ -1666,3 +1666,54 @@ var i = 5;
 
 /* Iterate with JS for loops ANCHOR */
 // You can run the same code multiple times by using a loop
+// NOTE The most common type of javscrip loop is (for)
+    // Because it runs for spcific number of times
+    // For loops are declared with three optional expressions serperated by semicolon:  
+
+//Example:
+for ([initialization]; [condition]; [final-expression])
+//(initialization)
+// The (initialization) statement is executed one time only before the loop starts.
+// It is usually set used up to define and set up your loop variable 
+
+// NOTE Iteration: is the repetion of a process in order to generate a (possibly unbounded) sequence of outcomes (depends on whether TRUE or FALSE?)
+// The sequence will approach some end point or end value
+
+//LOOPS:
+// Is best for when you can determine in advance how many times you need to execute a loop (conting loop)
+
+// (condition)
+// teh condition statement us evalutaed at the beginning of every loop interation and will continue to loop as long as it evalutaes to:
+//TRUE
+
+// When the condition is FALSELat the start of the iterartion, the loop will stop executing
+// The means if the condition starts at FALSE, the loop will never execute
+
+//(final-expression)
+// The final-expression is executed at the end of each loop iteration 
+// Prior to the next CONDITION check and is usually used to increment or decrement your loop counter
+    //NOTE Increment: An increase or addition
+    //NOTE Decrement: A reduction or diminution
+
+/*EXAMPLE*/
+var ourArray = []; 
+for (var i = 0; i < 5; i++) {
+    ourArray.push(i);
+    
+}
+
+//Test:
+
+var myArray = [];
+
+for (var i = 1; i < 6; i++) {
+  myArray.push(i);
+ }
+
+ // (var i = 1;) = initialization / I has a value of 1
+ // i < 6: = condition / This will count on till it evaluates to 5 (FALSE)
+ //I++ = final-expression; increment (i) by 1
+
+
+
+
