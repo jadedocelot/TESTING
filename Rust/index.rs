@@ -103,10 +103,10 @@ Filename: Cargo.toml
   $ cargo new hello_cargo --bin $ cd hello_cargo
 19
  
-[package]
-name = "hello_cargo"
-version = "0.1.0"
-authors = ["Your Name <you@example.com>"]
+[package]// is a section heading that indicates that the following statements are configuring a package
+name = "hello_cargo"//
+version = "0.1.0"// THe 3 lines set the bits of configuration that cargo needs to set in order to compile
+authors = ["Your Name <you@example.com>"]//
 [dependencies]
 
 
