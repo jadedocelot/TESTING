@@ -906,6 +906,35 @@ print 'perimeter is', 2 * (length + breadth)
 #ANCHOR CHAPTER 7
 ## CONTROL FLOW!!!
 
+# Example: What if the user wanted to change the flow of how it works? 
+	# and by IT I mean Python statements
+	# What if you wanted your program to take some decisions and do different things depending on different situations, such as printing 
+	# 'Good morning' or 'Good Evening' depending on the time or day 
+# This is achieved using control flow statements. There are 3 control flow statements in Python:
+
+	# - if 
+	# for
+	# while
+
+
+# THE IF STATEMENT
+
+	# The if statement is used to check the condition
+	# (if) the condition is true, we run a block of statements (Called if-block)
+	# (else) we process another block of statements (called the else-block) -- the else cause is optional
+
+winner = 28
+guess = int(raw_input('Enter an integer : '))
+
+if guess == winner: 
+    print "Congratulations! You guessed it!."
+    print "(but you don't get any prizes.....HA HA"
+elif guess < winner:
+    print "Nope! It is a little higher than that."
+else:
+    print "No, it is a little lower than that."
+
+print "Done"
 
 
 
