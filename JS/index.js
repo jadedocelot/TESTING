@@ -1715,5 +1715,67 @@ for (var i = 1; i < 6; i++) {
  // I++ = final-expression; increment (i) by 1 (i-- decrements)
  /* exit */
 
+/* Iterate odd numbers with a (For) loop ANCHOR */
+// For loops dont have to iterate one at a time
+ // By changing the (final expression), we can count by even numbers 
+// using (+=2) one could increment a count by two each loop
+
+ //Example below
+ var myArray = [];
+  for (var i = 0; i < 10; i += 2) {
+    myArray.push(i); 
 
 
+      // OUTPUT:0,2,4,6,8,
+  }
+
+  // Another example below:
+
+// Setup
+var myArray = [];
+
+// Only change code below this line
+for (var i = 1; i < 11; i += 2) { 
+  myArray.push(i);
+
+//OUTPUT: 1, 3, 5, 7, 9
+
+}
+
+// Count backwards with a loop
+// a (i -=) will hae to be placed in the final-expression
+
+
+var myArray = [];
+
+
+for(var i = 9; i > 0; i -= 2) {
+    myArray.push(i)
+}
+/* END */
+
+// Iterate through an array with a (for) loop
+    // A common task in Javascript is to iterate through the content of an array
+        // This can be done with a (for) loop
+
+// The following code will will output each element of the array as (arr) to the console
+
+// NOTE that arrays have a zero-based indexing  
+
+var myArr = [ 2, 3, 4, 5, 6];
+var total = 0;
+
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+
+console.log(total) // OUTPUT: 20 
+
+/// initialization: var i = 0; -- This will start the count at 0, and since this us being applied to tbove array the starting point will be 2
+// condition: i < myArray.length, in this case the last interation is i === 4 which is 6 
+// i ++ will sift through the array 1 by 1
+
+// total += myArray [i]; = add the array (myArry) to total(starting with zero)
+   //[i] Add up each number within the array 1 by 1 
+
+  
