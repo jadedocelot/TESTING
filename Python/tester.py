@@ -1,4 +1,3 @@
-
 winner = 28
 guess = int(input("Enter an integer :"))
 

@@ -75,7 +75,144 @@
       * q: to quit HELP index     
    2. \ connect {database name}: will take you to requested database
    3. \list: will print out a list of your databases 
-   4. create database {database name}: will create a new database
+   4. create database {database name}; : will create a new database
+
+# NOTE (COMMANDS)
+  1. \l : presents a list of your current databases
+  2. \connect {database name}; : Connects to database
+
+## REFER to PSQL --h in command line for assistance
+
+### A very dangerous command
+ !! DROP DATABASE {database name}; : THIS DELETES THE DATABASE (IN MILI SECONDS) 
+
+
+# Creating Tables
+
+#Refer to the link below for data types
+https://www.postgresql.org/docs/9.5/datatype.html
+
+#EXAMPLE:
+   CREATE TABLE {table name} (
+        column name + data type + constraints if any
+
+    )
+
+(USE UNDERSCORE instead of DASH)
+
+  CREATE TABLE person (
+   id int,
+   first-name: varchar(50),
+   last-name: varchar(50),
+   gender: varchar(6),
+   date-of-birth: TIMESTAMP,
+
+  )
+
+# Understanding The Table
+(within post in ITERM) 
+
+tester=# CREATE TABLE person (
+  - TABLE has been created
+
+tester(# id int
+
+testr( # first-name VARCHAR(50),
+
+tester( #last-name VARCHAR(50),
+
+tester(# gender VARCHAR(6),
+
+tester(# date-of-birth DATE);
+  - PARANTHESES TO CLOSE 
+  - WONT EXECUTE WITHOUT THE SEMICOLON
+  - HIT ENTER
+
+TABLE CREATED  {TABLE NAME: persomn}
+
+tester=#
+
+# \d : to list tables
+        List of relations
+ Schema |  Name  | Type  | Owner
+--------+--------+-------+-------
+ public | person | table | ort
+(1 row)
+
+
+##  AND to take it another step further, enter in the following to see the table content
+tester=# \d {table name} 
+
+(REMINDER: slash (-) in place of underscor
+
+    Column     |         Type          | Collation | Nullable | Default
+---------------+-----------------------+-----------+----------+---------
+ id            | integer               |           |          |
+ first-name    | character varying(50) |           |          |
+ last-name     | character varying(50) |           |          |
+ gender        | character varying(6)  |           |          |
+ date-of-birth | date                  |           |          |
+
+# Creating a table with CONSTRAINTS
+ - NULL: Indicates that a data value does not exist in the database
+    https://en.wikipedia.org/wiki/Null_(SQL)
+
+
+CREATE TABLE person ( 
+id BIGSERIAL NOT NULL PRIMARY KEY
+  - BIGSERIAL means that it is a signed integer, which auto increments
+  - This is SQL SYNTAX
+
+first-name VARCHAR(50)NOT NULL,
+last-name VARCHAR(50)NOT NULL,
+gender VARCHAR(6)NOT NULL,
+date-of-birth DATE NOT NULL,
+)
+
+#DROP TABLE 
+  DROP TABLE person;
+
+
+tester=# CREATE TABLE person (
+tester(# id BIGSERIAL NOT NULL PRIMARY KEY,
+tester(# first-name VARCHAR(50) NOT NULL,
+tester(# last-name VARCHAR(50) NOT NULL,
+tester(# gender VARCHAR(7) NOT NULL,
+tester(# date-birth DATE NOT NULL,
+tester(# email VARCHAR(150) );
+CREATE TABLE
+tester=#
+
+# Now view table: 
+
+tester=#
+tester=# \d
+             List of relations
+ Schema |     Name      |   Type   | Owner
+--------+---------------+----------+-------
+ public | person        | table    | ort
+ public | person-id-seq | sequence | ort
+(2 rows)
+
+tester=#
+
+ - The (person-id-seq) is in regards to the (BIGSERIAL) that was added to the id
+  - BIGSERIAL is an auto incremnet number - SO WE DONT HAVE TO REMEBER THE PREVIUOUS number
+
+                                       Table "public.person"
+    Column     |          Type          | Collation | Nullable |              Default
+---------------+------------------------+-----------+----------+------------------------------------
+ id            | bigint                 |           | not null | nextval('person_id_seq'::regclass)
+ first-name    | character varying(50)  |           | not null |
+ last-name     | character varying(50)  |           | not null |
+ gender        | character varying(7)   |           | not null |
+ date-of-birth | date                   |           | not null |
+ email         | character varying(150) |           |          |
+Indexes:
+    "person_pkey" PRIMARY KEY, btree (id)
+
+
+  - EMAIL is NULL (DOES not require a value
 
 
 
@@ -91,11 +228,3 @@
 
 
 
-
-
-
-
-
-
-
- 
