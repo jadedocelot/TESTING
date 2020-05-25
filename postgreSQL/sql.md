@@ -215,6 +215,38 @@ Indexes:
   - EMAIL is NULL (DOES not require a value
 
 
+# insert into
+  - Inserting records into tables
+
+So far we have the follow ing
+
+tester(DATABASE) ---- > person(TABLE)
+
+# Inserting records into (person) table
+
+tester=# INSERT INTO person (first-name, last-name, gender, date-of-birth)
+tester-# VALUES ('Edgar', 'Ortega', 'MALE' , DATE '1991-08-28');
+INSERT 0 1
+  - This indicates that the records was successfully inserted into the (person) table
+
+## Lets add another record, this time with an EMAIL 
+
+tester=# INSERT INTO person (first-name, last-name, gender, date-of-birth, email)
+tester-# VALUES ('Joe', 'Garage', 'MALE' , DATE '1978-08-28', 'Joe@gmail.com,);
+INSERT 0 1
+
+tester=# 
+
+# Now that you have added some records to your (person) table, lets check them out
+
+tester=# SELECT * FROM person;
+
+id | first_name | last_name | gender | date_of_birth |        email
+----+------------+-----------+--------+---------------+----------------------
+  1 | Edgar      | Ortega    | MALE   | 1991-08-28    | gobbl@earthlink.com
+  2 | Joe        | Garage    | MALE   | 1984-04-13    | joesgarage@gmail.com
+(2 rows)
+
 
 
 
