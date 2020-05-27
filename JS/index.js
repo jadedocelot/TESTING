@@ -1778,4 +1778,124 @@ console.log(total) // OUTPUT: 20
 // total += myArray [i]; = add the array (myArry) to total(starting with zero)
    //[i] Add up each number within the array 1 by 1 
 
+/* Nesting For Loops ANCHOR */
+
+// IF you have multi deminsional arrays, you can use the same logic as  the prior waypoint to loop through both the array and the sub arrays
+
+// EXAMPLE: 
+var arr = [
+    [1,2], [3,4], [5,6]
+  ];
+  for (i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      console.log(arr[i][j])
+    }
+      
+  }
+
+// EXAMPLE 2 
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+ß™
+function multiplyAll(arr) {
+    var product = 1;
+    
+    for (var i=0; i < arr.length; i++) {
+        for (var j=0; j < arr[i].length; j++) { // This will cont the elements within the arrays within the array
+        product *= arr[i][j]; // now we will MULTIPLY the (product) with  with the arrays(elements) nested within the main array
+
+      }
+    }
+    
+    return product;
+  }
+
   
+  console.log(product); // OUTPUT: 5040
+  
+/* END */
+
+/* iterate with javascript Do....While Loops ANCHOR */
+//The next loop we will be learning is (do..while) loop
+  //it is called this because it will first (do) one pass of the code inside the loop no matter what
+  // And continue to run the loop (while) the specified condition evaluates TRUE 
+
+//EXAMPLE 1: 
+ 
+var ourArray = [];
+var i = 0;
+do { 
+    ourArray.push(i);
+    i++;
+
+} while (i < 5);
+
+// This is similar to other types of loops, and the resulting array will look like  [0,1,2,3,4]
+    //what makes the (do..while) different from other loops is how it behaves when the condition FAILS on the first check 
+    // SEE THE NEXT EXAMPLE:
+
+var ourArray =[];
+var  i = 5;
+while (i < 5);{
+    ourArray.push(i);
+    i++;
+}
+
+// The above will not present you with [0, 1, 2, 3, 4] since when the WHILE loop evaluates to FALSE because is (i) is not less than 5
+    // And since the condition evaluates to FALSE you are handed an empty array
+
+    var ourArray = [];
+    var i = 0;
+    do { 
+        ourArray.push(i);
+        i++;
+    
+    } while (i < 5);
+
+
+// The above syntax will print out  an array with a single element [5]
+
+var myArray = [];
+var i = 10;
+
+do{
+  myArray.push(i);
+  i++;
+} while (i < 11);
+
+// OUTPUT: 11[10]
+
+/* Replace loops using recursion ANCHOR */
+// Recursion is the concept that a function can be expressed in terms of itself
+    // See the following task example
+function multiply (arr, n) { 
+    var product = 1;
+    for (var i = 0; i < n; i++) { 
+            product *= arr[i];
+    }
+    return product;
+}
+
+// In the next example we will rewrite multiply in terms of itself and never need to use loop
+
+
+function multiply(arr, n) { 
+    if (n <= 0) { 
+        return 1;
+    } else {
+        return multiply(arr, n, -1) * arr[n,-1];
+    }
+}
+    
+//Recursive: characterized by recurrence or repitetion
+
+
+saddleback college > financial aid > scholarship
+
+honors (3.2) -- applicationCache
+
+
+EOPS -- application
+
+
+
+
