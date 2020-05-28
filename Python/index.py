@@ -923,27 +923,23 @@ print 'perimeter is', 2 * (length + breadth)
 	# (if) the condition is true, we run a block of statements (Called if-block)
 	# (else) we process another block of statements (called the else-block) -- the else cause is optional
 
-winner = 28
-guess = int(raw_input('Enter an integer : '))
+number = 28 # We have assigned 28 to number
+guess = (input('Enter the integer:')) 
+# Input converts to string 
+# (if) prints out a string and waits for an input from the user
+# We then convert this string intp an integer
+# The nnumber that is entered in by the user is then compared
+if guess == number: # if the integer is equal to the number then the block below will print out
+	# New block starts here (stripping a line) and returns 
+    print('Congratulations, you guessed the correct number') # Enter in  28 
+	# New block ends here
+elif guess < number: # else if the guess is less than the number, then the block below will print out
+	# Another block
+    print('No, a little higher') # Enter in 22 
+else:  # else is optional /// though if the guess is higher than the number then the block below will print out
+    print('No, a little lower than that') # Enter in 34 
 
-if guess == winner: 
-    print "Congratulations! You guessed it!."
-    print "(but you don't get any prizes.....HA HA"
-elif guess < winner:
-    print "Nope! It is a little higher than that."
-else:
-    print "No, it is a little lower than that."
-
-print "Done"
-
-
-
-
-
-
-
-
-
+print('done')
 
 
 
