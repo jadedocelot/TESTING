@@ -1,11 +1,10 @@
-number = 28 
-guess = (input('Enter the integer:'))
+yes = True
+no = False 
 
-if guess == number:
-    print('Congratulations, you guessed the correct number')
-elif guess < number:
-    print('No, a little higher')
-else: 
-    print('No, a little lower than that')
+guess = (input('Would you prefer that I turn the lights on?'))
 
-print('done')
+if guess == yes:
+    print("*LGHTS ON*")
+else:
+    print("*Lights remain off*")
+         

@@ -931,6 +931,7 @@ guess = (input('Enter the integer:'))
 # The nnumber that is entered in by the user is then compared
 if guess == number: # if the integer is equal to the number then the block below will print out
 	# New block starts here (stripping a line) and returns 
+	# Notice the colon (:) at the end of the (if), we are indicating that a block statment follows 
     print('Congratulations, you guessed the correct number') # Enter in  28 
 	# New block ends here
 elif guess < number: # else if the guess is less than the number, then the block below will print out
@@ -938,10 +939,30 @@ elif guess < number: # else if the guess is less than the number, then the block
     print('No, a little higher') # Enter in 22 
 else:  # else is optional /// though if the guess is higher than the number then the block below will print out
     print('No, a little lower than that') # Enter in 34 
+	# The elif and else statement must always have a colon at the end of the logical line followed by their corrosponding block statement 
+		# (with poper indentation, of course)
 
 print('done')
 
+# Don't forget the indentation!	
+	# Always be consistent with indentation
 
+# You can have another (if) statement inside the if-block of an (if) statment and so on
+	# This is called a nested (if) statement
+	# EXAMPLE:
+number = 28 
+guess = (input('Enter the integer:'))
+
+if guess == number:
+    print('Congratulations, you guessed the correct number')
+if guess == 69: # Nested if statements
+	print('Dude, really?')
+elif guess < number:
+    print('No, a little higher')
+else: 
+    print('No, a little lower than that')
+
+print('done')
 
 
 
