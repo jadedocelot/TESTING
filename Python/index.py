@@ -946,23 +946,24 @@ print('done')
 
 # Don't forget the indentation!	
 	# Always be consistent with indentation
+# After Python has fiinished executing the complete  (if statement) along with the associated (elif) and (else) clauses
+	# It will then move on to the next statement in the block containing the (if) statement.
+# Though in this case (the above example) the next statement is print('done'), after this Python sees the ends of the program and finished up
 
-# You can have another (if) statement inside the if-block of an (if) statment and so on
-	# This is called a nested (if) statement
-	# EXAMPLE:
-number = 28 
-guess = (input('Enter the integer:'))
+# The (while) statement  ANCHOR 
+	# the (while) statement allows you to repeatedly execute a block statement as long as the condition is true
+	# the (whilte) statement is an example of what is called a looping statement (for being another loop statement)
+	# The (while) statement can have an optinonal (else) clauses
+##EXAMPLE BELOW## 
 
-if guess == number:
-    print('Congratulations, you guessed the correct number')
-if guess == 69: # Nested if statements
-	print('Dude, really?')
-elif guess < number:
-    print('No, a little higher')
-else: 
-    print('No, a little lower than that')
+number = 23 
+running = True
 
-print('done')
+while running:
+    guess = int(input('Enter an integer: '))
+
+    if guess == number:
+        print 'Congrats bitch!'
 
 
 

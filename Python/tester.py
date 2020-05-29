@@ -1,10 +1,16 @@
-yes = True
-no = False 
+number = 23 
+running = True
 
-guess = (input('Would you prefer that I turn the lights on?'))
-
-if guess == yes:
-    print("*LGHTS ON*")
+while running:
+    guess = int(input('Enter an integer: '))
+if guess == number:
+    print 'Congrats bitch!'
+ 
+elif guess < number: 
+    print('No, a little higher than that.')
+else: 
+    print('No, a little lower than that.')
 else:
-    print("*Lights remain off*")
-         
+    print('The while loop is over.')
+
+print('Done')
