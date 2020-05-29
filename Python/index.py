@@ -8,8 +8,7 @@ print(greeting) #this will proceed to print HEY FUCKER!
 
 REVIEW #umbers are mainly two types, integers (integer is a whole number that is not afraction) and floats REVIEW
 	   ##AN example to an integer is 2 which is a whole number
-	   ###an example of a floating point number (or FLOAT for short) are 3.23 and 52.3E-4
-	   	* The E notation indicates POWERS of 10. in this case 52.3E-4 means 52.3 * 10^-4^ = .00523 * 10 
+	   ###an example of a floating point number (or FLOAT for short) are 3.23 and 52.3E-4	ß* The E notation indicates POWERS of 10. in this case 52.3E-4 means 52.3 * 10^-4^ = .00523 * 10 
 	   			REVIEW: "Scientific Notation" - -4 means move the decimal point 4 places to the LEFT (+ to the RIGHT).
 * https://www.google.com/search?q=decimal+numbers+multiplied+by+a+negative+exponents&rlz=1C5CHFA_enUS871US871&oq=decimal+number+multiplied+by+a+negative+expon&aqs=chrome.1.69i57j33.16646j0j8&sourceid=chrome&ie=UTF-8#kpvalbx=_9F2jXpuBG9280PEP8eei-As55
 * https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/a/negative-exponents-review
@@ -965,8 +964,33 @@ while running:
     if guess == number:
         print 'Congrats bitch!'
 
+# EXAMPLE 2  --- Guessing game
+	# The advange of the (while) statement is that the user is allowed to keep guessing until they guess correctly
+				# FUCK HAVING TO CONSTANT RUN  THE CODE AND I E F5 
+	
 
+number = 23
+running = True 
 
+while running: # Notice how the (input() and (if) statement rest inside the while loop), as well as set the running variable to (True) 				 		before the while loo
+	# If the variable running is true(ON) then Python will proceed to to execute the corresponding while block
+	# And the (while) block will continue looping as long as the running variable is true
+    guess = int(input('Enter an integer : ')) 
+    
+    if guess == number:
+        print('Congratulations, you guessed it.') 
+        
+        running = False # Once the correct (number) is guessed then the running variable will be switched to FALSE which will stop the loop
+    elif guess < number: # the elif/else block will be executed when the (while) loop condition is (False)
+        print('No, it is a little higher than that.')
+    else:
+        print('No, it is a little lower than that.')
+else: 
+    print('The WHILE loop is over')
+
+print('Test will end in')
+# You may consider TRUE and FALSE (booleans) -- you can consider them to be the equivelant to the value 1 and 0 respectively
+# The while loop is always executed unless you break out the loop with a (break) statement
 
 
 
