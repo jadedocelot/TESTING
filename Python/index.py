@@ -992,7 +992,64 @@ print('Test will end in')
 # You may consider TRUE and FALSE (booleans) -- you can consider them to be the equivelant to the value 1 and 0 respectively
 # The while loop is always executed unless you break out the loop with a (break) statement
 
+# The (for) loop 
+	# The (for...in) statement is another loop statement which itereates over a sequence of objects.
+		# i.e. go through each in a sequence (A sequence is an ordered collection of items)
 
+# EXAMPLE
+
+else:
+    print('This loop is over in..')
+for i in range (1, 5):
+    print i
+else:
+    print('This (for) is over')
+
+# In the above example we are printing out a sequence of numbers
+	# This can be accomplishd by using the built-in (range) function 
+
+# What we do here is supply two numbers and (range) returns a sequence of numbers starting from the first number up to the second number
+	#range(1, 5) 
+		# Gives a sequence [1,2,3,4,5]. By default, range takes	a step count of 1
+		# Though say we wanted to up the count up to a 2 count seqeunce
+			# in orde to do this we would need to add a 3rd number to the range for example
+				# range(0, 12, 2): 
+					# OUTPUT: 0, 2, 4, 6, 8, 10
+					# Remeber that the range extends up to the second number i.e. it does not include the second number
+					# Range() generates a sequence of numbers all at once, so this is safe for only small ranges 
+				# If a long range but generated only one number at a time, use 
+					xrange() 
+
+# the (for) loop then iterates over the range of i in range(1, 5), is the equivalent to (for) i in [1,2,3,4,5]
+	# Which is like assigning each number(or object) in the sequence to i
+
+# (break) statement ANCHOR 
+	# The (break) statement is used to BREAK out the loop statement i.e. stop the execution of a loop statement
+		# Even if the loop condition has not become False or the sequence of items has not been completelty iterated over
+			# NOTE if you (break) out of a (for) or (while) loop, any corrosponding loop (else) block is not exectuted
+
+# EXAMPLE
+while True: 
+    sad = raw_input('Enter something:')
+    if sad == 'quit':
+        break
+    print "Length of string is:",len(sad) 
+print('Done')
+
+# In the example above, we take the users input and print the length of it with len()
+# We are providing a special condition to stop the program by checking if the user input is "quit".
+	# We stop the program by breaking out of the loop and reach the end of the program
+
+# The (continue) statement ANCHOR
+
+
+
+
+
+
+
+
+	 
 
 
 
