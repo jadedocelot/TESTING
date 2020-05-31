@@ -1041,6 +1041,7 @@ print('Done')
 	# We stop the program by breaking out of the loop and reach the end of the program
 
 # The (continue) statement ANCHOR
+	# the (continue) statement is used to tell Python to skip the resst of the statements in the current loop block
 
 
 
