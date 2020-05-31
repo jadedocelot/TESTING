@@ -1043,6 +1043,17 @@ print('Done')
 # The (continue) statement ANCHOR
 	# the (continue) statement is used to tell Python to skip the resst of the statements in the current loop block
 
+while True:  
+    s = raw_input("Take your chances:")
+    if s == 'quit':
+        break
+    elif len(s) < 3:
+        print('Too small')
+        continue
+    else:
+        print('Input is of suffecient length')
+
+
 
 
 

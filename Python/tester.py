@@ -1,6 +1,8 @@
-while True: 
-    sad = raw_input('Enter something:')
-    if sad == 'quit':
+while True:  
+    s = raw_input("Take your chances:")
+    if s == 'quit':
         break
-    print "Length of string is:",len(sad) 
-print('Done')
+    elif len(s) < 3:
+        print('Too small')
+        continue
+    print('Input is of suffecient length')
