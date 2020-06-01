@@ -1075,7 +1075,31 @@ while True:
     # They also allow you to give a name to a block of statments
     # Allowing you to run that block using a specified name anywhere in your program and any number of times 
         # NOTE This is know as (CALLING) the function  
+            # Other similar built in function that have been used are (len()) and (range)
+# This function is concept is probably THE most important building block of any non trivial software
 
+# Functions are defined using the (def) keyword
+    # After the key word comes an IDENTIFIER name for the function followed by a pair of parentheses which may enclose some names of variables
+        # And by the final colon that ends the line
+            # Next follows the block of statements that are part of this function 
+
+def say_hello(): # <-- FUNCTION
+	print("Hello World!") # <-- BLOCK belonging to the function
+
+say_hello() # <-- Call the function 
+say_hello()	# < -- CALL the function again
+
+# HOW IT WORKS ANCHOR 	
+	# We have defined (def) the fuction with a keyword (say_hello)
+		# The function takes no parameters hence there are NO variables declared in the parantheses
+		 # Parameters to functions are just input to the function so we can pass in different functions and get back corrosponding results
+		  # NOTE That we can call the same function twice, which means we do not need to write the same code twice
+
+# ANCHOR Function Parameters
+ # A function can take parameters 
+	# Which are values you supply to the function so that the function can do something utilisiing those values
+	 # These values are just like variable
+	
 
 
 
