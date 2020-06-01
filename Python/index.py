@@ -1,4 +1,5 @@
-greeting = ("Hey fucker!") 
+ear
+Greeting = ("Hey fucker!") 
 
 print(greeting) #this will proceed to print HEY FUCKER!
 
@@ -1059,6 +1060,22 @@ while True:
 
 		    # We skip the statement rest of the statements in the block by using the (continue) statement
     # Otherwise the rest of the statements in the loop are executed, doing any kind of processing we want to fo here
+
+### SUMMARY ##
+
+    # The functions discussed in this chapter are the following:
+        # (if), (while), and (for) 
+            # Along with a few associations such as (break) and (coninue) statement
+             # These are the most commonly used parts of Python, hence becoming comfortable is with them is essential
+
+
+# FUNCTIONS ANCHOR # 
+
+# (functions) are reusable pieces of programs 
+    # They also allow you to give a name to a block of statments
+    # Allowing you to run that block using a specified name anywhere in your program and any number of times 
+        # NOTE This is know as (CALLING) the function  
+
 
 
 
