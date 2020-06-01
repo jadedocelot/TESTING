@@ -1054,6 +1054,13 @@ while True:
         print('Input is of suffecient length')
 
 
+    # We accept input from the user, but we process the input string only if it is at least 3 characters long
+    # As you can see a built-in len() function to get the legnth and if the length is less than 3
+
+		    # We skip the statement rest of the statements in the block by using the (continue) statement
+    # Otherwise the rest of the statements in the loop are executed, doing any kind of processing we want to fo here
+
+
 
 
 
