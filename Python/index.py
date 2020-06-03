@@ -1098,7 +1098,6 @@ say_hello()	# < -- CALL the function again
 # ANCHOR Function Parameters
  # A function can take parameters 
 	# Which are values you supply to the function so that the function can do something utilisiing those values
-	 # These values are just like variable
 	 # These values are just like variable except that the values of the variables are defined when we call the function and are already assigned assigned values when the function runs	
 # Parameters are specified within a pair of parantheses(), seperated by commas(,)
 # When we call this function, we supply the values in the same way
