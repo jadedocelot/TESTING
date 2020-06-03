@@ -1,5 +1,6 @@
-def say_hello(): 
-    print("Hello world!")
+def func(a, b=5, c=5):
+	print 'a is', a,'and b is', b, 'and c is', c
 
-say_hello()
-say_hello()
+func(3, 7)
+func(25, c=24)
+func(c=50, a=100)

@@ -1099,18 +1099,122 @@ say_hello()	# < -- CALL the function again
  # A function can take parameters 
 	# Which are values you supply to the function so that the function can do something utilisiing those values
 	 # These values are just like variable
-	
+	 # These values are just like variable except that the values of the variables are defined when we call the function and are already assigned assigned values when the function runs	
+# Parameters are specified within a pair of parantheses(), seperated by commas(,)
+# When we call this function, we supply the values in the same way
+	# NOTE The terminalology, the names given in the function definition are called PARAMETERS whereas the values you supply in the function are called ARGUMENTS
+
+	def print_max(a, b): 
+		# function has been defined (print_max) Funtion with parameters
+		# (print_max) uses two parameters called (a, b)
+			# We find out the greater number using (if) and (else) statement and then print the bigger number
+    if a > b:
+        print a, "is maximum"
+    elif a == b:
+        print a, "is equal", b
+    else:
+        print b, "is maximum"
+
+print_max(3,4)
+	# The first time we call print_max function, we directly supply the numbers as arguments
+
+x = 7
+y = 7
+
+print_max(x, y) # 7 is equal 7
+	# in the second case, we call the function with the variables as arguments 
+		#  The value argument (x) is to be assigned to (a)
+		#  And (y) value was assigned to parameter (b), the (prin_max) function works the same way in both cases
+
+# Local Variables ANCHOR 
+# When you declare variables inside a function definition, they are not related	in any way to other variables with the same name used outside of  the function
+	# i.e. variable names that are local to the functiion
+		# This is called the (scope) of the varible
+# All variables have the scope of the block they are declared in starting from the point of the definition of the name
+
+x = 50 
+
+def func(x):
+    print('x is', x) 
+    x = 2
+    print('changed local x to', x) 
+
+func(x) 
+print('x is still', x)
 
 
+# The global statement ANCHOR 
+	# If you want to assign a value to a name defined at the top level of the program
+		# i.e. not inside any kind of scope such as functions of classes 
+	# Then you have to tell Python that the name is not local, but that it's (global)
+		# We do this using the (global) statement
+	# NOTE It is impossible to assign a value to a variable defined outside a function without the (global) statement
+
+# You can use the values of such variables defined outside outside the function
+	# (assuming there is no variable with the same name within the function)
+
+x = 50 
+
+def func(): 
+    global x 
+ 
+    print 'x is', x  ## OUTPUT: x is, 50 
+    x = 2 
+    print 'changed (GLOBAL) x to', x  # OUTPUT: changed (GLOBAL) x to, 2
+
+func()
+print 'value of x is', x  # OUTPUT: value of x is, 2
+
+# The (global) statement is used to declare x is a (global) variable - hence, when we assign a value to (x) inside the function,
+	# that change is reflected when we use the value of (X) in the main block
+
+# EXAMPLE 2:
+	# The example below shows the user of a (global) statement being used in the main block
+
+x = 50 
+global x 
+
+def func(x): 
+    print'x is', x  # x is, 50 
+    x = 2 
+    print 'changed (GLOBAL) x to', x  # changed (GLOBAL) x to, t
+
+func(x)
+print 'and now x is back to', x #and now x is back to, 50  
 
 
+# ANCHOR Default argument values
+	# At times you may want to make some parameters (optional) and use (default) values in case the user does not want to provide values for them
+#	This is done with the help of (default) arguments
+ # You can specify default argument values for parameters by appending the to the parameter name in the function defenition the assignment 
+	# operator (=) followed by the default value
+# NOTE That the default argument value should be constant. More precisely, the default argument value should be immutable
+
+def say(message, times=1):
+    print message + times
+
+say('Hello') # OUTPUT: Hello
+# In the use above: we supply only a string and it prints it just once 
+
+say('World', 5) # OUTPUT: WorldWorldWorldWorldWorld
+# In the use above: we supply both a s string and argument (5)
+	 # Stating that we want to (say) the string message 5 times
 
 
+# The function named (say) is used to print a string as many times as specified
+	# If we dont supply a value, then by default the string is printed just once
+	# We achieve this by specifying a default argument value (1) to the parameter (times)
 
+# ANCHOR Keyword Argurments
+	# if you have some functions wih MANY parameters and you only want to spcify some of them
 
+# Keyword arguments NOTE 
+def func(a, b=5, c=5):
+	print 'a is', a,'and b is', b, 'and c is', c
 
-	 
-
+func(3, 7)
+func(25, c=24)
+func(c=50, a=100)
 
 
 
