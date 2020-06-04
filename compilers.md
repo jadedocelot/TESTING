@@ -7,5 +7,8 @@
 
   - High level programming is used to avoid tedious and  the error prone process of programming
     - This language can be very different from the MACHINE LANGUAGE that the computer can execute, this is where that damn compiler comes in handy
+      (C++ is a HIGH LEVEL programming language which requires a compiler)
 
-
+## The You, The Machine, And the Compiler
+  - A compiler translates (or compiles) a program written in a high level programming language (NOTE like C++) 
+    - The compiler will also attempt to spot and report ovious programmer mistakes  

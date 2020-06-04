@@ -30,7 +30,8 @@ int main ()
     std::cout << "Hello world!";
     return 0;
 
-}// METHOD
+} // <-- This closes the body
+
 // in the example above notice some elements listed, the line numbers are used for reference only
     //LINE 23:
         // This is known as a PRE-PROCESSOR
@@ -53,7 +54,7 @@ int main ()
          //  indicates that this is a method and that it takes no arguments
          //  look into METHODS and ARGUMENTS in C++
             // (default) argument
-                //
+                // if a functionn
     // LINE 29:
         // (Method) bodie in C++ start with open curly brace 
     //LINE 30:
@@ -61,6 +62,27 @@ int main ()
             // This is referring to a standard output device i.e. monitor
          // (::COUT) is an object of class ostream.
          // it is defined in the <iostream>
+        // The (STD::) prefix to this command is a way of indication that the (cout) is part of a namespace known as the (STD::)
+         // the (::) is used to indicate that the (cout) is part of the (STD) namespace
 
+    // LINE 31:
+        // That damn (return) statement
+            //The (return) statment is used to end a function or method when a value is expected to be sent back to the caller.
+            // In this case the caller is the operating system and the value returned is an integer value of 0
+                //When the program reaches this statement, returning the value of 0 is an indication to the operting system that the code executed successfully
+
+            //NOTE in the past, programmers would return zero to return a 0 to indicate a successful execution and a NON zero value indicate an error somewhere in the progean
+                // MAIN function requires (return)
+                // This program statement is actually optional, for the compiler adds a return 0; if you dont explicitly return a value
+                // EXIT CODE TO PROGRAM
+    // LINE  33:
+        //This line closes the body fo the (main()) function and is necessary so the compiler knows where the function or method ends
+
+    // Portability vs Ability to execute
+        // Portablity refers to the process of compiling code, without major changes 
+         // Compilers refer to the process of turning code into executable form
+            // There are a number of compilers available
+
+/* The Role of The Linker ANCHOR */
 
     
