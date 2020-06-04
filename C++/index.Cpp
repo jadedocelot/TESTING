@@ -10,7 +10,8 @@
                 // 1. classes: A (class) is a user-defined data type that we can use in  our program, and it works as an object constructor
                 // 2. objects: An object is created from a class
                 // 3. attributes
-                // 4. Methods
+                // 4. Methods: Methods are functions that belong to a class
+                 // 
 // C++ exists under the stewardship of a standards committee and became and ISO standard in 1998
         //NOTE in other words, it doesnt belong to anyone
     // With a revision in 2011 and a minor revision in 2014, it continues to be updated as a part of the standard committee work
@@ -42,6 +43,8 @@ int main ()
          // is the return type of the method  
         // The empty parantheses | () | (after main method)
          //  indicates that this is a method and that it takes no arguments
+         // TODO look into METHODS and ARGUMENTS in C++
+         
 
 
     
