@@ -1208,16 +1208,16 @@ say('World', 5) # OUTPUT: WorldWorldWorldWorldWorld
 	# if you have some functions wih MANY parameters and you only want to spcify some of them
 
 # Keyword arguments NOTE 
-def func(a, b=5, c=5):
+def func(a, b=5, c=10): # The function named (func) has one parameter without a default argument value (a), followed by two parameters with def arg values
 	print 'a is', a,'and b is', b, 'and c is', c
 
-func(3, 7)
-func(25, c=24)
-func(c=50, a=100)
+func(3, 7) # the (a) para gets the value of 3, (b) gets the value of 7, and (c) gets the DEFAULT value of 10
+func(25, c=24)  # (a) will get the 25 value due to the position of the argument, (b) will get the default value of 5, and (c) will get the value of 24 due to the naming i.e. the (keyword argument)
+func(c=50, a=100) # (a) eaquls 100 due to key arg (b) equals 5 by default val (c) is 50 -- > key arg 
+# NOTE position of arg values does not matter??
 
-
-
-
-
-
+OUTPUT:
+a is 3 and b is 7 and c is 10
+a is 25 and b is 5 and c is 24 
+a is 100 and b is 5 and c is 50
 

@@ -1,6 +1,9 @@
-def func(a, b=5, c=5):
-	print 'a is', a,'and b is', b, 'and c is', c
+def func(a, b=10, c=23): 
+	print 'a equals', a, 'b equals', b, 'and c equals',c
 
-func(3, 7)
-func(25, c=24)
-func(c=50, a=100)
+func(23,55)
+func(11,2,c=55)
+func(c=100,a=50)  # a equals 50 b equals 10 c equals 100
+ 
+
+ 
