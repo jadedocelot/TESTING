@@ -1887,15 +1887,39 @@ function multiply(arr, n) {
 }
     
 //Recursive: characterized by recurrence or repitetion
+    /* Recusrsion */ 
+        // Recursion is the method of solving a problem where the solution depends on solutions to smaller instances. All within the same problem
+         // something used to solve these smaller problems is (iteration) 
+            // Iteration: is the repetition of a process to generate a sequence of outcomes
+                // The sequence will reach some end point or end value
+        
+/* Base case and Recursive case */ 
+    // something to be weary about when it comes to the recursive function is the possibility of an infinite loop
+        // This is when the function keeps calling itself
 
+// Example of code with an infinite loop : 
 
-saddleback college > financial aid > scholarship
+// WARNING: This function contains an infinite loop!
+function countdown(i) {  
+    console.log(i)  
+    countdown(i - 1)}
 
-honors (3.2) -- applicationCache
+countdown(5);    // This is the initial call to the function.
+        
+// A way to avoid running into this problem is using a (base case)
+    // again, the recursive case is when a function calls itself and the base case is when the function stops calling itself
+        // This prevents an infinite loop
 
+    // The example below not only includes a recursive case but a base case as well.
 
-EOPS -- application
-
-
-
+        function countdown(i) {
+            console.log(i)  
+            if (i <= 1) {  // base case
+                return;
+            } else {     // recursive case
+                countdown(i - 1);
+            }
+        }
+        
+        countdown(5);    // This is the initial call to the function.
 

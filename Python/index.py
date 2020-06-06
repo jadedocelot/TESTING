@@ -1221,3 +1221,9 @@ a is 3 and b is 7 and c is 10
 a is 25 and b is 5 and c is 24 
 a is 100 and b is 5 and c is 50
 
+
+# ANCHOR VarAr parameters
+	# At times you may want to define a function that can take any number of parameters
+		# i.e. VARiable number of ARGuments, this can be achieved
+		 # this can be achieved by using the STARS (baby)
+		 
