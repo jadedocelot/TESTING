@@ -34,3 +34,7 @@
 
 
 ## Bin2rong
+
+
+
+I heard the white house cabinet was a joke, but they were'nt kidding about it being run by clowns.

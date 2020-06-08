@@ -1038,7 +1038,7 @@ while True:
 print('Done')
 
 # In the example above, we take the users input and print the length of it with len()
-# We are providing a special condition to stop the program by checking if the user input is "quit".
+# We are providing a specDeep Learning for Vision Systems condition to stop the program by checking if the user input is "quit".
 	# We stop the program by breaking out of the loop and reach the end of the program
 
 # The (continue) statement ANCHOR
@@ -1226,4 +1226,4 @@ a is 100 and b is 5 and c is 50
 	# At times you may want to define a function that can take any number of parameters
 		# i.e. VARiable number of ARGuments, this can be achieved
 		 # this can be achieved by using the STARS (baby)
-		 
+
