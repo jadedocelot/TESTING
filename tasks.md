@@ -5,5 +5,5 @@
    [X] JS Profile Lookup
 
 # June 9th 2020
-  {X} Python Syntax
- 
+  {X} Python 
+  {X} C++ Intro MD (Slowly ease into this)

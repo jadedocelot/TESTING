@@ -6,16 +6,17 @@
 
 ## {Python}
   [x] w3 - Python Syntax 
-     [] Variables
-
+     [X] Variables
+     [X] Comments 
+   
 
 ## {C++} 
-  [x] w3 - C++ introduction 
+  [ ] w3 - C++ introduction 
 
 
 
 
-## {Javascript}
+## {Javascript (MAYBE Typescript?)}
 
 
 
